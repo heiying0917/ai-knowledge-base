@@ -29,8 +29,8 @@
 
 | 数据来源 | 技能 | 说明 |
 |----------|------|------|
-| GitHub Trending | `github-analysis` | 分析流程、评分标准、输出格式详见 `.opencode/skills/github-analysis/SKILL.md` |
-| Hacker News | `hn-analysis` | 分析流程、评分标准、输出格式详见 `.opencode/skills/hn-analysis/SKILL.md`（待创建） |
+| GitHub Trending | `github-analysis` | 必须使用 `.opencode/skills/github-analysis/SKILL.md` 技能分析 |
+| Hacker News | `hn-analysis` | 必须使用 `.opencode/skills/hn-analysis/SKILL.md` 技能分析（待创建） |
 
 收到分析指令后，根据原始数据的 `source_type` 加载对应的 skill 执行。未指定数据来源时，根据 `knowledge/raw/` 中待处理文件的实际来源自动匹配。
 

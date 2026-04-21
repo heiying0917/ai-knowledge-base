@@ -97,63 +97,81 @@ allowed-tools:
 ## 输出格式
 
 ```json
-{
-  "skill": "github-analysis",
-  "analyzed_at": "2026-04-20T08:35:00Z",
-  "summary": {
-    "total_analyzed": 15,
-    "score_distribution": {
-      "9-10": 1,
-      "7-8": 4,
-      "5-6": 7,
-      "1-4": 3
+[
+  {
+    "id": "gh-20260420-deepseek-r1",
+    "title": "DeepSeek-R1 开源推理模型发布",
+    "source_url": "https://github.com/deepseek-ai/DeepSeek-R1",
+    "source_type": "github_trending",
+    "summary": "开源推理模型，强化学习训练，推理能力接近 o1。",
+    "tags": ["llm", "reasoning", "open-source", "deepseek"],
+    "category": "model-release",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-20T08:30:00Z",
+    "analyzed_at": "2026-04-20T08:35:00Z",
+    "metadata": {
+      "stars": 15000,
+      "language": "python"
+    },
+    "collected_by": "collector",
+    "raw_written_by": "orchestrator",
+    "analyzed_by": "analyzer",
+    "analysis": {
+      "highlights": [
+        "采用 GRPO 强化学习算法，无需 SFT 即可实现推理能力提升",
+        "在 MATH 基准上达到 79.8%，接近 o1 的 85.5%"
+      ],
+      "score": 9,
+      "score_reason": "开源社区首个在推理能力上接近闭源顶级模型的成果，且训练方法可复现，对行业格局有实质影响"
     }
-  },
-  "items": [
-    {
-      "id": "gh-20260420-deepseek-r1",
-      "title": "DeepSeek-R1 开源推理模型发布",
-      "source_url": "https://github.com/deepseek-ai/DeepSeek-R1",
-      "source_type": "github_trending",
-      "summary": "开源推理模型，强化学习训练，推理能力接近 o1。",
-      "tags": ["llm", "reasoning", "open-source", "deepseek"],
-      "category": "model-release",
-      "importance": "high",
-      "status": "analyzed",
-      "language": "zh-CN",
-      "collected_at": "2026-04-20T08:30:00Z",
-      "analyzed_at": "2026-04-20T08:35:00Z",
-      "metadata": {
-        "stars": 15000,
-        "language": "python"
-      },
-      "collected_by": "collector",
-      "raw_written_by": "orchestrator",
-      "analyzed_by": "analyzer",
-      "analysis": {
-        "highlights": [
-          "采用 GRPO 强化学习算法，无需 SFT 即可实现推理能力提升",
-          "在 MATH 基准上达到 79.8%，接近 o1 的 85.5%"
-        ],
-        "score": 9,
-        "score_reason": "开源社区首个在推理能力上接近闭源顶级模型的成果，且训练方法可复现，对行业格局有实质影响"
-      }
-    }
-  ]
-}
+  }
+]
 ```
 
 ### 字段说明
 
+#### 知识条目字段
+
 | 字段 | 类型 | 必填 | 说明 |
 |------|------|------|------|
-| `skill` | string | 是 | 固定为 `github-analysis` |
-| `analyzed_at` | string | 是 | ISO 8601 格式分析完成时间（UTC） |
-| `summary` | object | 是 | 分析概览 |
-| `summary.total_analyzed` | number | 是 | 分析条目总数 |
-| `summary.score_distribution` | object | 是 | 各分数段分布 |
-| `items` | array | 是 | 分析后的知识条目列表 |
-| `items[].analysis` | object | 是 | 本技能新增的分析结果 |
-| `items[].analysis.highlights` | string[] | 是 | 技术亮点，2-3 条，用事实说话 |
-| `items[].analysis.score` | number | 是 | 评分，1-10 |
-| `items[].analysis.score_reason` | string | 是 | 评分理由，需具体说明 |
+| `id` | string | 是 | 唯一标识，格式 `gh-{日期}-{简短标识}`，继承自原始采集数据 |
+| `title` | string | 是 | 中文标题，简洁概括项目核心，继承自原始采集数据 |
+| `source_url` | string | 是 | 项目原始链接，继承自原始采集数据 |
+| `source_type` | string | 是 | 来源类型，固定为 `github_trending`，继承自原始采集数据 |
+| `summary` | string | 是 | AI 精炼的中文摘要，≤50 字，由 analyzer 生成替换原始摘要 |
+| `tags` | string[] | 是 | 标签，3-5 个，从预定义标签集中选取，由 analyzer 重新分配 |
+| `category` | string | 是 | 分类: `model-release` / `paper` / `tool` / `tutorial` / `industry`，由 analyzer 判定 |
+| `importance` | string | 是 | 重要性: `high`(score ≥ 7) / `medium`(5 ≤ score ≤ 6) / `low`(score ≤ 4)，由 analyzer 根据评分映射 |
+| `status` | string | 是 | 状态，由原始的 `raw` 变更为 `analyzed` |
+| `language` | string | 是 | 内容语言标识，固定为 `zh-CN`，继承自原始采集数据 |
+| `collected_at` | string | 是 | ISO 8601 采集时间，继承自原始采集数据 |
+| `analyzed_at` | string | 是 | ISO 8601 分析完成时间，由 analyzer 生成 |
+| `metadata` | object | 否 | 来源相关元数据（stars、language、forks 等），继承自原始采集数据 |
+| `collected_by` | string | 是 | 采集者标识，固定为 `collector`，继承自原始采集数据 |
+| `raw_written_by` | string | 是 | raw 文件写入者，固定为 `orchestrator`，继承自原始采集数据 |
+| `analyzed_by` | string | 是 | 分析者标识，固定为 `analyzer`，由 analyzer 填写 |
+| `analysis` | object | 是 | 分析详情，由 analyzer 生成，详见下方 |
+
+#### analysis 字段
+
+| 字段 | 类型 | 必填 | 说明 |
+|------|------|------|------|
+| `analysis.highlights` | string[] | 是 | 技术亮点，2-3 条，必须引用具体指标或方法名称，禁止空洞描述 |
+| `analysis.score` | number | 是 | 评分，1-10 整数，单次分析中 9-10 分不超过 2 个 |
+| `analysis.score_reason` | string | 是 | 评分理由，说明为什么是这个分数而不是更高或更低 |
+
+#### 字段来源溯源
+
+| 字段 | 来源 | 说明 |
+|------|------|------|
+| `id` / `title` / `source_url` / `source_type` / `collected_at` / `metadata` / `collected_by` / `raw_written_by` / `language` | 原始采集数据 | 直接继承，analyzer 不修改 |
+| `summary` | analyzer | 基于原始摘要精炼，≤50 字 |
+| `tags` | analyzer | 基于分析结果重新分配，3-5 个 |
+| `category` | analyzer | 根据项目性质判定分类 |
+| `importance` | analyzer | 根据 score 映射: high/medium/low |
+| `status` | analyzer | 从 `raw` 变更为 `analyzed` |
+| `analyzed_at` | analyzer | 分析完成时的时间戳 |
+| `analyzed_by` | analyzer | 固定值 `analyzer` |
+| `analysis` | analyzer | 分析详情（highlights、score、score_reason） |

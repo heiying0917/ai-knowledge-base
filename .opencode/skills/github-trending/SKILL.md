@@ -104,34 +104,23 @@ GET https://api.github.com/search/repositories?q=created:>2026-04-13&sort=stars&
 ## 输出格式
 
 ```json
-{
-  "source": "github_trending",
-  "skill": "github-trending",
-  "collected_at": "2026-04-20T08:30:00Z",
-  "items": [
-    {
-      "name": "deepseek-ai/DeepSeek-R1",
-      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
-      "summary": "DeepSeek 开源推理模型 R1，采用强化学习训练路线，在数学和代码推理任务上表现接近 o1 水平。值得关注因为它证明了无需大规模监督数据也能获得强推理能力，且完全开源可本地部署。",
-      "stars": 15000,
-      "language": "python",
-      "topics": ["llm", "reasoning", "open-source", "deepseek"]
-    }
-  ]
-}
+[{
+    "name": "deepseek-ai/DeepSeek-R1",
+    "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+    "summary": "DeepSeek 开源推理模型 R1，采用强化学习训练路线，在数学和代码推理任务上表现接近 o1 水平。值得关注因为它证明了无需大规模监督数据也能获得强推理能力，且完全开源可本地部署。",
+    "stars": 15000,
+    "language": "python",
+    "topics": ["llm", "reasoning", "open-source", "deepseek"]
+}]
 ```
 
 ### 字段说明
 
 | 字段 | 类型 | 必填 | 说明 |
 |------|------|------|------|
-| `source` | string | 是 | 固定为 `github_trending` |
-| `skill` | string | 是 | 固定为 `github-trending` |
-| `collected_at` | string | 是 | ISO 8601 格式采集时间（UTC） |
-| `items` | array | 是 | 仓库列表，最多 15 条 |
-| `items[].name` | string | 是 | 仓库全名 `owner/repo` |
-| `items[].url` | string | 是 | 仓库 GitHub 链接 |
-| `items[].summary` | string | 是 | 中文摘要，50-150 字 |
-| `items[].stars` | number | 是 | 当前 Star 数 |
-| `items[].language` | string | 否 | 主要编程语言 |
-| `items[].topics` | string[] | 否 | 仓库标签列表 |
+| `name` | string | 是 | 仓库全名 `owner/repo` |
+| `url` | string | 是 | 仓库 GitHub 链接 |
+| `summary` | string | 是 | 中文摘要，50-150 字 |
+| `stars` | number | 是 | 当前 Star 数 |
+| `language` | string | 否 | 主要编程语言 |
+| `topics` | string[] | 否 | 仓库标签列表 |

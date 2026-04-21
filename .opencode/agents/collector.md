@@ -29,8 +29,8 @@
 
 | 数据源 | 技能 | 说明 |
 |--------|------|------|
-| GitHub Trending | `github-trending` | 采集流程、过滤条件、输出格式详见 `.opencode/skills/github-trending/SKILL.md` |
-| Hacker News | `hacker-news` | 采集流程、过滤条件、输出格式详见 `.opencode/skills/hacker-news/SKILL.md`（待创建） |
+| GitHub Trending | `github-trending` | 必须使用 `.opencode/skills/github-trending/SKILL.md` 技能采集 |
+| Hacker News | `hacker-news` | 必须使用 `.opencode/skills/hacker-news/SKILL.md` 技能采集 |
 
 收到采集指令后，根据指令中指定的数据源加载对应的 skill 执行。未指定数据源时，默认执行所有已配置的 skill。
 

@@ -113,17 +113,46 @@ ai-knowledge-base/
 
 | 角色 | Agent 名称 | 职责 | 输入 | 输出 |
 |------|-----------|------|------|------|
-| 采集 | `collector` | 定时爬取 GitHub Trending / Hacker News，提取 AI 相关条目原始数据 | 定时触发 / 手动指令 | `knowledge/raw/` 下的原始 JSON |
-| 分析 | `analyzer` | 对原始数据去重、AI 摘要生成、标签分类、重要性评级 | `knowledge/raw/` 中的原始数据 | 状态为 `analyzed` 的知识条目 |
+| **编排** | `orchestrator`（主 Agent） | 接收用户指令、调度子 Agent、传递数据、写入文件、状态流转管理 | 用户指令 / 定时触发 | 文件落盘、子 Agent 调度 |
+| 采集 | `collector` | 定时爬取 GitHub Trending / Hacker News，提取 AI 相关条目原始数据 | 定时触发 / 手动指令 | JSON 数据（交由 orchestrator 写入） |
+| 分析 | `analyzer` | 对原始数据去重、AI 摘要生成、标签分类、重要性评级 | `knowledge/raw/` 中的原始数据 | 状态为 `analyzed` 的知识条目（交由 orchestrator 传递） |
 | 整理 | `organizer` | 将分析后的条目格式化为推送内容，分发到 Telegram / 飞书，归档到 `knowledge/articles/` | 状态为 `analyzed` 的条目 | 推送消息 + 状态为 `published` 的归档文件 |
+
+### 编排层（orchestrator）职责
+
+主 Agent 是整个系统的**编排层**，职责如下：
+
+1. **指令路由**: 根据用户指令自动判断应委托给哪个子 Agent（采集 → `collector`、分析 → `analyzer`、整理 → `organizer`）
+2. **数据传递**: 接收子 Agent 的输出，传递给下一个环节
+3. **文件写入**: 子 Agent 无 Write 权限，所有文件写入由编排层统一执行
+4. **状态管理**: 追踪每条知识条目的状态流转（`raw` → `analyzed` → `published`）
+5. **异常处理**: 子 Agent 执行失败时，决定重试或上报
+
+**编排层禁止事项**:
+
+- **禁止替代子 Agent**: 不得自己执行采集、分析、整理等子 Agent 职责范围内的工作。例如：用户说"采集 GitHub Trending"，编排层必须委托 `collector` Agent，不能自己调用 WebFetch 去采集
+- **禁止跳过委托链**: 不得从 `collector` 的输出直接跳到 `organizer`，必须经过 `analyzer` 环节
+- **禁止加工子 Agent 输出**: 子 Agent 返回的数据必须原样透传写入或更新，不得自行添加、删除、修改任何字段或包装结构
 
 ### 协作流程
 
 ```
-[定时触发] → collector → knowledge/raw/ → analyzer → organizer → [Telegram/飞书]
-                                                                     ↓
-                                                          knowledge/articles/
+用户指令 → orchestrator（路由）→ collector（采集，无 Write）
+                                    ↓ 返回 JSON
+                                 orchestrator（写入 knowledge/raw/）
+                                    ↓ 调度
+                                 analyzer（分析，无 Write）
+                                    ↓ 返回分析结果
+                                 orchestrator（传递）
+                                    ↓ 调度
+                                 organizer（整理，仅写 knowledge/articles/）
+                                    ↓
+                                 [Telegram/飞书] + knowledge/articles/
 ```
+
+### 数据流转约定
+
+**主 Agent（orchestrator）只负责透传**：子 Agent 返回什么数据，主 Agent 就原样写入或更新什么数据，不得自行添加、删除、修改任何字段或包装结构。各阶段的数据格式由各 Agent 自行定义，主 Agent 不做任何加工。
 
 ## 7. 红线
 
@@ -136,3 +165,5 @@ ai-knowledge-base/
 5. **禁止无限重试**: 网络请求失败最多重试 3 次，必须有指数退避，不得死循环
 6. **禁止破坏性文件操作**: Agent 不得执行 `rm -rf`、批量删除、格式化等不可逆操作
 7. **禁止绕过状态机**: 条目状态必须按 `raw` → `analyzed` → `published` 顺序流转，不得跳步或回退
+8. **禁止编排层越权**: 主 Agent 不得替代子 Agent 执行采集、分析、整理等职责，必须按委托链调度
+9. **禁止篡改子 Agent 输出**: orchestrator 透传子 Agent 返回的数据时，不得添加、删除、修改任何字段或包装结构
