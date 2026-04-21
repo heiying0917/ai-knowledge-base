@@ -1,0 +1,159 @@
+[
+  {
+    "name": "kyegomez/OpenMythos",
+    "url": "https://github.com/kyegomez/OpenMythos",
+    "summary": "OpenMythos 基于公开研究文献从第一性原理重建 Claude Mythos 架构。使用 PyTorch/JAX 实现，涵盖 attention 机制和 looped-transformers 等核心技术，为理解前沿大模型架构提供了可复现的参考实现，对研究 Transformer 架构演进具有重要价值。",
+    "stars": 4396,
+    "language": "python",
+    "topics": [
+      "ai",
+      "anthropic",
+      "attention",
+      "claude",
+      "claude-ai",
+      "claude-code",
+      "deepmind",
+      "jax",
+      "looped-transformers",
+      "ml",
+      "pytorch",
+      "torch"
+    ]
+  },
+  {
+    "name": "browser-use/browser-harness",
+    "url": "https://github.com/browser-use/browser-harness",
+    "summary": "browser-harness 提供自愈式浏览器自动化框架，让 LLM 能够自主完成任意网页任务。基于元素识别和智能重试机制，解决了传统浏览器自动化脚本脆弱易碎的痛点，是 AI Agent 与网页交互的关键基础设施。",
+    "stars": 3659,
+    "language": "python",
+    "topics": []
+  },
+  {
+    "name": "Robbyant/lingbot-map",
+    "url": "https://github.com/Robbyant/lingbot-map",
+    "summary": "lingbot-map 是前馈式 3D 基础模型，用于从流式数据中实时重建三维场景。采用 foundation model 范式处理空间感知问题，在机器人导航和 AR/VR 场景中有广泛应用前景，代表了空间智能的新方向。",
+    "stars": 3306,
+    "language": "python",
+    "topics": []
+  },
+  {
+    "name": "Manavarya09/design-extract",
+    "url": "https://github.com/Manavarya09/design-extract",
+    "summary": "design-extract 一条命令提取任意网站完整设计系统，输出 DTCG 标准 design tokens。支持 MCP Server 集成 Claude Code/Cursor，可导出到 SwiftUI、Compose、Flutter、Figma 等多平台，内置 CSS 健康检查和 WCAG 修复。",
+    "stars": 1162,
+    "language": "javascript",
+    "topics": [
+      "ai",
+      "agent-skill",
+      "chrome-extension",
+      "claude-code-plugin",
+      "design-system",
+      "design-tokens",
+      "mcp-server",
+      "shadcn-ui",
+      "tailwind"
+    ]
+  },
+  {
+    "name": "codejunkie99/agentic-stack",
+    "url": "https://github.com/codejunkie99/agentic-stack",
+    "summary": "agentic-stack 提供可移植的 .agent/ 文件夹，包含记忆、技能和协议配置，可无缝接入 Claude Code、Cursor、Windsurf、OpenCode 等多个 AI 编码工具。解决了在不同 Agent 平台间切换时知识丢失的核心痛点。",
+    "stars": 765,
+    "language": "python",
+    "topics": []
+  },
+  {
+    "name": "stanford-iris-lab/meta-harness",
+    "url": "https://github.com/stanford-iris-lab/meta-harness",
+    "summary": "Stanford IRIS Lab 发布的 Meta-Harness 论文参考实现，研究 LLM Agent 在软件工程任务中的评估方法论。为系统化衡量和提升大模型代码生成能力提供了学术级别的框架和基准。",
+    "stars": 537,
+    "language": "python",
+    "topics": ["harness-engineering", "llm-agents"]
+  },
+  {
+    "name": "zhuyansen/wx-favorites-report",
+    "url": "https://github.com/zhuyansen/wx-favorites-report",
+    "summary": "微信收藏可视化 Claude Code Skill，实现从加密数据库读取微信收藏到生成交互式 HTML 报告的端到端管线。展示了如何用 AI Agent 技能打通个人数据处理全流程，是 Agent 落地实用场景的优秀范例。",
+    "stars": 518,
+    "language": "python",
+    "topics": []
+  },
+  {
+    "name": "millionco/claude-doctor",
+    "url": "https://github.com/millionco/claude-doctor",
+    "summary": "claude-doctor 是 Claude Code 会话诊断工具，帮助开发者排查和优化 AI 编码助手的交互问题。提供会话健康检查、性能分析和配置建议，让开发者更好地理解和调优 Agent 工作流。",
+    "stars": 482,
+    "language": "typescript",
+    "topics": ["claude", "code", "doctor"]
+  },
+  {
+    "name": "ZeroZ-lab/cc-design",
+    "url": "https://github.com/ZeroZ-lab/cc-design",
+    "summary": "cc-design 为 AI Agent 提供高保真 HTML 设计和原型指导技能。让不具备设计背景的开发者也能通过 Agent 快速生成专业级 UI 原型，降低设计与开发之间的协作壁垒。",
+    "stars": 481,
+    "language": "javascript",
+    "topics": []
+  },
+  {
+    "name": "kangarooking/cangjie-skill",
+    "url": "https://github.com/kangarooking/cangjie-skill",
+    "summary": "cangjie-skill 实现将一本书蒸馏为一组可执行 Agent Skills 的知识提取管线。结合知识蒸馏和 prompt engineering 技术，把非结构化文本转化为 Agent 可直接调用的结构化技能，探索了知识工程的新范式。",
+    "stars": 402,
+    "language": null,
+    "topics": [
+      "agent-workflows",
+      "ai-skills",
+      "automation",
+      "book-to-skill",
+      "knowledge-distillation",
+      "prompt-engineering",
+      "skill-generator",
+      "templates"
+    ]
+  },
+  {
+    "name": "Quorinex/Freebuff2API",
+    "url": "https://github.com/Quorinex/Freebuff2API",
+    "summary": "Freebuff2API 是 OpenAI 兼容的代理服务，具备动态 free-agent 追踪和 Token 轮换机制。提供即开即用的 Docker 部署方案，简化了 AI API 接入和密钥管理的复杂度。",
+    "stars": 360,
+    "language": "go",
+    "topics": []
+  },
+  {
+    "name": "432539/gpt2api",
+    "url": "https://github.com/432539/gpt2api",
+    "summary": "gpt2api 是基于 chatgpt.com 逆向的 OpenAI 兼容 SaaS 网关，支持 GPT-Image-2 图像生成、多账号池管理和高并发调度。为需要大规模 AI API 调用的场景提供了完整的后端解决方案。",
+    "stars": 201,
+    "language": "go",
+    "topics": ["chatgpt", "gpt-image-2", "openai"]
+  },
+  {
+    "name": "YeQing17-2026/OmniAgent",
+    "url": "https://github.com/YeQing17-2026/OmniAgent",
+    "summary": "OmniAgent 是具备自进化能力的 Agent 框架，支持动态安全加固。结合 OpenClaw 生态，探索了 Agent 在安全领域的自主进化路径，为构建更健壮的自适应 AI 系统提供了新思路。",
+    "stars": 198,
+    "language": "python",
+    "topics": ["agent", "hermes", "open-claw"]
+  },
+  {
+    "name": "Mondo-Robotics/DiT4DiT",
+    "url": "https://github.com/Mondo-Robotics/DiT4DiT",
+    "summary": "DiT4DiT 是 Vision-Action-Model (VAM) 框架的官方实现，将视频生成模型与 flow-matching 动作预测结合，用于通用机器人操作任务。展示了 Diffusion Transformer 在具身智能领域的前沿探索。",
+    "stars": 176,
+    "language": "python",
+    "topics": []
+  },
+  {
+    "name": "iFurySt/open-codex-computer-use",
+    "url": "https://github.com/iFurySt/open-codex-computer-use",
+    "summary": "Open Computer Use 是 Codex Computer Use 的开源替代方案，支持 MCP 协议集成。让 AI Agent 能够通过计算机视觉和系统操控完成桌面级自动化任务，拓展了 Agent 在桌面交互场景的应用边界。",
+    "stars": 170,
+    "language": "swift",
+    "topics": [
+      "codex-computer-use",
+      "computer-use",
+      "open-computer-use",
+      "open-computer-use-mcp"
+    ]
+  }
+]

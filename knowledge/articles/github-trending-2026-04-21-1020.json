@@ -1,0 +1,394 @@
+[
+  {
+    "id": "github-20260421-001",
+    "title": "OpenMythos：Claude Mythos 架构理论重建",
+    "source_url": "https://github.com/kyegomez/OpenMythos",
+    "source_type": "github_trending",
+    "summary": "从公开文献重建 Claude Mythos 的 Recurrent-Depth Transformer 架构，PyTorch/JAX 双框架实现，含 MoE、MLA/GQA、ACT 机制，1B-1T 参数预配置。",
+    "tags": ["llm", "open-source", "framework", "paper"],
+    "category": "paper",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 4396,
+      "language": "python",
+      "forks": 1000
+    },
+    "analysis": {
+      "highlights": [
+        "实现 Recurrent-Depth Transformer，770M 参数循环模型等效 1.3B 固定深度 Transformer",
+        "包含 Parcae 架构确保训练稳定性（谱半径 < 1）和 ACT 自适应计算时间机制",
+        "提供 1B-1T 参数预配置变体，配套 FineWeb-Edu 数据集训练脚本"
+      ],
+      "score": 8,
+      "score_reason": "对最强闭源模型之一的完整架构理论重建，4.5k stars 说明社区高度认可，技术细节详尽（包含训练代码、论文引用、架构图），对理解 Transformer 演进有重要学术价值"
+    }
+  },
+  {
+    "id": "github-20260421-002",
+    "title": "browser-harness：自愈式浏览器自动化框架",
+    "source_url": "https://github.com/browser-use/browser-harness",
+    "source_type": "github_trending",
+    "summary": "让 LLM 自主完成任意网页任务的自愈式浏览器自动化框架，解决传统脚本脆弱痛点，元素识别+智能重试机制。",
+    "tags": ["agent", "tool", "llm"],
+    "category": "tool",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 3659,
+      "language": "python"
+    },
+    "analysis": {
+      "highlights": [
+        "基于元素识别的智能重试机制实现自愈能力，解决传统浏览器自动化脆弱的核心痛点",
+        "AI Agent 与网页交互的关键基础设施，支撑端到端网页任务自动化"
+      ],
+      "score": 7,
+      "score_reason": "精准解决 AI Agent 在网页操作场景的实际痛点，3.6k stars 验证需求真实性，框架设计可直接应用于生产环境"
+    }
+  },
+  {
+    "id": "github-20260421-003",
+    "title": "lingbot-map：前馈式 3D 基础模型",
+    "source_url": "https://github.com/Robbyant/lingbot-map",
+    "source_type": "github_trending",
+    "summary": "前馈式 3D 基础模型，foundation model 范式从流式数据实时重建三维场景，服务机器人导航和 AR/VR。",
+    "tags": ["multimodal", "inference"],
+    "category": "model-release",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 3306,
+      "language": "python"
+    },
+    "analysis": {
+      "highlights": [
+        "采用 foundation model 范式处理空间感知问题，在机器人导航和 AR/VR 场景有应用前景",
+        "前馈式架构支持实时三维场景重建"
+      ],
+      "score": 6,
+      "score_reason": "空间智能方向有创新性，但 star 增速和具体技术细节披露有限，属于值得了解的前沿探索"
+    }
+  },
+  {
+    "id": "github-20260421-004",
+    "title": "design-extract：网站设计系统提取工具",
+    "source_url": "https://github.com/Manavarya09/design-extract",
+    "source_type": "github_trending",
+    "summary": "一条命令提取任意网站完整设计系统为 DTCG 标准 tokens，支持 MCP Server 集成 Claude Code/Cursor，多平台导出。",
+    "tags": ["tool", "mcp", "code"],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 1162,
+      "language": "javascript"
+    },
+    "analysis": {
+      "highlights": [
+        "DTCG 标准 design tokens 确保设计系统互操作性",
+        "MCP Server 集成 Claude Code/Cursor，支持 SwiftUI/Compose/Flutter/Figma 多平台导出"
+      ],
+      "score": 5,
+      "score_reason": "开发者工具属性明确，解决设计系统提取的实际问题，但非 AI/LLM 核心技术突破，影响范围限于前端工作流"
+    }
+  },
+  {
+    "id": "github-20260421-005",
+    "title": "agentic-stack：多 Agent 平台可移植方案",
+    "source_url": "https://github.com/codejunkie99/agentic-stack",
+    "source_type": "github_trending",
+    "summary": "可移植 .agent/ 文件夹方案，记忆、技能、协议配置在 Claude Code、Cursor、Windsurf、OpenCode 间无缝迁移。",
+    "tags": ["agent", "tool", "framework"],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 765,
+      "language": "python"
+    },
+    "analysis": {
+      "highlights": [
+        "解决多 Agent 平台切换时知识丢失的核心痛点",
+        "标准化 .agent/ 文件夹格式具有跨平台通用性"
+      ],
+      "score": 6,
+      "score_reason": "精准解决 Agent 工具生态碎片化问题，标准化方案有一定通用价值，但 star 数量显示影响力有限"
+    }
+  },
+  {
+    "id": "github-20260421-006",
+    "title": "Meta-Harness：LLM Agent 评估框架",
+    "source_url": "https://github.com/stanford-iris-lab/meta-harness",
+    "source_type": "github_trending",
+    "summary": "Stanford IRIS Lab 论文参考实现，自动化搜索任务特定模型 harnesses，支撑 LLM Agent 软件工程评估方法论。",
+    "tags": ["llm", "agent", "evaluation", "paper"],
+    "category": "paper",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 537,
+      "language": "python"
+    },
+    "analysis": {
+      "highlights": [
+        "Stanford IRIS Lab 官方发布，学术背景提供方法论严谨性",
+        "提供文本分类和 Terminal-Bench 两类参考实验，arXiv:2603.28052"
+      ],
+      "score": 6,
+      "score_reason": "填补 LLM Agent 评估工具空白，学术价值明确，但工程落地性和社区基础相对有限"
+    }
+  },
+  {
+    "id": "github-20260421-007",
+    "title": "wx-favorites-report：微信收藏可视化",
+    "source_url": "https://github.com/zhuyansen/wx-favorites-report",
+    "source_type": "github_trending",
+    "summary": "微信收藏可视化 Claude Code Skill，端到端打通加密数据库到交互式 HTML 报告，Agent 落地实用场景范例。",
+    "tags": ["agent", "tool", "code"],
+    "category": "tool",
+    "importance": "low",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 518,
+      "language": "python"
+    },
+    "analysis": {
+      "highlights": [
+        "展示 Agent 技能在个人数据处理中的端到端实用价值",
+        "从加密数据库到可视化报告的完整管线设计有参考意义"
+      ],
+      "score": 5,
+      "score_reason": "场景案例展示 Agent 落地可能性，但通用性和可复用性有限，star 数量说明一定关注度但非核心技术"
+    }
+  },
+  {
+    "id": "github-20260421-008",
+    "title": "claude-doctor：Claude Code 会话诊断工具",
+    "source_url": "https://github.com/millionco/claude-doctor",
+    "source_type": "github_trending",
+    "summary": "Claude Code 会话诊断工具，提供健康检查、性能分析和配置建议，辅助开发者调优 Agent 工作流。",
+    "tags": ["agent", "tool", "code"],
+    "category": "tool",
+    "importance": "low",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 482,
+      "language": "typescript"
+    },
+    "analysis": {
+      "highlights": [
+        "会话级诊断能力填补 Claude Code 工具链空白",
+        "配置优化建议可直接提升开发者调优效率"
+      ],
+      "score": 5,
+      "score_reason": "垂直场景工具定位准确，解决 Claude Code 用户的实际痛点，但影响范围限于单一工具用户群"
+    }
+  },
+  {
+    "id": "github-20260421-009",
+    "title": "cc-design：AI Agent UI 设计技能",
+    "source_url": "https://github.com/ZeroZ-lab/cc-design",
+    "source_type": "github_trending",
+    "summary": "为 AI Agent 提供高保真 HTML 设计和原型指导技能，降低设计与开发协作壁垒，非设计师也能生成专业 UI。",
+    "tags": ["agent", "tool", "code"],
+    "category": "tool",
+    "importance": "low",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 481,
+      "language": "javascript"
+    },
+    "analysis": {
+      "highlights": [
+        "填补 Agent 在设计能力上的短板",
+        "降低设计与开发协作壁垒的实用方案"
+      ],
+      "score": 5,
+      "score_reason": "解决实际问题但非底层技术突破，star 数量显示影响力和技术深度有限"
+    }
+  },
+  {
+    "id": "github-20260421-010",
+    "title": "cangjie-skill：书到 Agent Skills 知识提取",
+    "source_url": "https://github.com/kangarooking/cangjie-skill",
+    "source_type": "github_trending",
+    "summary": "将书蒸馏为一组可执行 Agent Skills 的知识提取管线，book-to-skill 范式探索知识工程新方向。",
+    "tags": ["agent", "rag", "knowledge-distillation"],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 402,
+      "language": null
+    },
+    "analysis": {
+      "highlights": [
+        "知识蒸馏与 Agent 技能结合的方法论创新",
+        "book-to-skill 范式将非结构化文本转化为可执行技能"
+      ],
+      "score": 6,
+      "score_reason": "技术思路有创新性，探索知识工程新范式，但成熟度和社区基础有限，属于值得关注的前沿方向"
+    }
+  },
+  {
+    "id": "github-20260421-011",
+    "title": "Freebuff2API：OpenAI 兼容代理服务",
+    "source_url": "https://github.com/Quorinex/Freebuff2API",
+    "source_type": "github_trending",
+    "summary": "OpenAI 兼容代理服务，动态 free-agent 追踪和 Token 轮换机制，即开即用 Docker 部署。",
+    "tags": ["api", "tool"],
+    "category": "tool",
+    "importance": "low",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 360,
+      "language": "go"
+    },
+    "analysis": {
+      "highlights": [
+        "动态 free-agent 追踪和 Token 轮换机制",
+        "即开即用 Docker 部署简化 AI API 接入"
+      ],
+      "score": 5,
+      "score_reason": "工程实现有意义，但非底层技术创新，star 数量有限，属于工具类项目的常规水平"
+    }
+  },
+  {
+    "id": "github-20260421-012",
+    "title": "gpt2api：chatgpt.com 逆向网关",
+    "source_url": "https://github.com/432539/gpt2api",
+    "source_type": "github_trending",
+    "summary": "基于 chatgpt.com 逆向的 OpenAI 兼容 SaaS 网关，支持 GPT-Image-2 和多账号池管理。",
+    "tags": ["api", "openai"],
+    "category": "tool",
+    "importance": "low",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 201,
+      "language": "go"
+    },
+    "analysis": {
+      "highlights": [
+        "支持 GPT-Image-2 图像生成",
+        "多账号池管理实现高并发调度"
+      ],
+      "score": 4,
+      "score_reason": "逆向工程存在合规风险，技术壁垒有限，star 数量偏低，不建议在实际项目中使用"
+    }
+  },
+  {
+    "id": "github-20260421-013",
+    "title": "OmniAgent：自进化 Agent 框架",
+    "source_url": "https://github.com/YeQing17-2026/OmniAgent",
+    "source_type": "github_trending",
+    "summary": "具备自进化能力的 Agent 框架，支持动态安全加固，结合 OpenClaw 生态探索安全领域自主进化路径。",
+    "tags": ["agent", "safety", "framework"],
+    "category": "framework",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 198,
+      "language": "python"
+    },
+    "analysis": {
+      "highlights": [
+        "自进化机制设计探索 Agent 自主成长路径",
+        "动态安全加固结合 OpenClaw 生态"
+      ],
+      "score": 6,
+      "score_reason": "技术方向有前瞻性，self-evolution 概念有创新价值，但 star 数量有限，成熟度待验证"
+    }
+  },
+  {
+    "id": "github-20260421-014",
+    "title": "DiT4DiT：Vision-Action-Model 框架",
+    "source_url": "https://github.com/Mondo-Robotics/DiT4DiT",
+    "source_type": "github_trending",
+    "summary": "Vision-Action-Model 官方实现，视频生成模型与 flow-matching 动作预测结合，用于通用机器人操作。",
+    "tags": ["multimodal", "inference", "robotics"],
+    "category": "model-release",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 176,
+      "language": "python"
+    },
+    "analysis": {
+      "highlights": [
+        "Diffusion Transformer 在具身智能的前沿应用",
+        "视频生成与 flow-matching 动作预测的创新融合"
+      ],
+      "score": 6,
+      "score_reason": "技术方向前沿，VAM 框架在机器人操作有潜力，但 star 数量有限，实现完整度待验证"
+    }
+  },
+  {
+    "id": "github-20260421-015",
+    "title": "Open Computer Use：Codex 替代方案",
+    "source_url": "https://github.com/iFurySt/open-codex-computer-use",
+    "source_type": "github_trending",
+    "summary": "Codex Computer Use 开源替代，支持 MCP 协议集成，通过计算机视觉实现桌面级自动化任务。",
+    "tags": ["agent", "mcp", "tool"],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T00:00:00Z",
+    "analyzed_at": "2026-04-21T08:00:00Z",
+    "metadata": {
+      "stars": 170,
+      "language": "swift"
+    },
+    "analysis": {
+      "highlights": [
+        "MCP 协议集成标准化桌面自动化交互",
+        "Codex Computer Use 的开源替代方案"
+      ],
+      "score": 6,
+      "score_reason": "开源替代有实际需求，MCP 协议集成符合生态方向，但 star 数量有限，技术实现完整度待验证"
+    }
+  }
+]

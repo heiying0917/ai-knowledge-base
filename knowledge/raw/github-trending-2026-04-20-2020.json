@@ -1,0 +1,128 @@
+[
+  {
+    "title": "AIScientists-Dev/WorldSeed",
+    "url": "https://github.com/AIScientists-Dev/WorldSeed",
+    "source": "github_trending",
+    "popularity": 155,
+    "summary": "AI Agent 自治世界引擎，支持物理规则和信息不对称，任何 Agent 都可接入。通过 YAML 定义场景，观察涌现故事。涵盖多智能体系统、社会模拟、生成式 AI 等方向，是一个探索 AI Agent 自主行为与涌现交互的开源仿真平台。"
+  },
+  {
+    "title": "Hainrixz/open-carrusel",
+    "url": "https://github.com/Hainrixz/open-carrusel",
+    "source": "github_trending",
+    "popularity": 125,
+    "summary": "基于 AI 驱动的 Instagram 轮播图构建工具，使用 Claude 对话式设计幻灯片，导出为 Instagram 精确尺寸的 PNG 图片。支持本地运行、Next.js + React 构建，展示了 AI 在内容创作工作流中的实际应用。"
+  },
+  {
+    "title": "humanrouter/ddtree-mlx",
+    "url": "https://github.com/humanrouter/ddtree-mlx",
+    "source": "github_trending",
+    "popularity": 106,
+    "summary": "面向 Apple Silicon 的树状推测解码 MLX 实现，在代码生成任务上比 DFlash 快约 10-15%，比自回归推理快约 1.5 倍。首个包含自定义 Metal 内核的 MLX 移植版本，支持混合模型架构，是 LLM 推理加速领域的重要进展。"
+  },
+  {
+    "title": "yzhao062/agent-style",
+    "url": "https://github.com/yzhao062/agent-style",
+    "source": "github_trending",
+    "popularity": 100,
+    "summary": "为 AI 编码和写作 Agent 定制的 21 条写作规则，可直接用于 Claude Code、Codex、Copilot、Cursor 和 Aider 等工具，让 Agent 输出具备专业技术人员风格。属于 Prompt Engineering 实践，对提升 AI Agent 输出质量有直接参考价值。"
+  },
+  {
+    "title": "335234131/agent-browser-mcp",
+    "url": "https://github.com/335234131/agent-browser-mcp",
+    "source": "github_trending",
+    "popularity": 90,
+    "summary": "让 AI Agent 直接操作真实 Chrome 浏览器的 MCP 服务，支持页面扫描、CDP 协议、截图与物理输入模拟。为 LLM Agent 提供了浏览器级别的交互能力，是 Agent 工具链生态的重要补充。"
+  },
+  {
+    "title": "gameworld-project/gameworld",
+    "url": "https://github.com/gameworld-project/gameworld",
+    "source": "github_trending",
+    "popularity": 61,
+    "summary": "GameWorld：面向多模态游戏 Agent 的标准化可验证评估基准。提供统一的游戏环境测试框架，用于评估 LLM/VLM 在游戏场景中的 GUI 操作、决策和规划能力，填补了游戏 AI Agent 评估领域的空白。"
+  },
+  {
+    "title": "guo2001china/35gateway",
+    "url": "https://github.com/guo2001china/35gateway",
+    "source": "github_trending",
+    "popularity": 46,
+    "summary": "35m.ai 开源的 AI Gateway，支持文本、图片、视频、音频、音乐多模态一键接入，具备多供应商智能路由和自带 Key 混合使用能力。面向私有化部署场景，帮助企业高效管理和调度 AI 算力资源。"
+  },
+  {
+    "title": "JuliusBrussee/cavemem",
+    "url": "https://github.com/JuliusBrussee/cavemem",
+    "source": "github_trending",
+    "popularity": 41,
+    "summary": "面向编码助手的跨 Agent 持久化记忆系统，采用压缩存储、快速检索的设计，默认本地运行。解决了 AI 编码 Agent 之间上下文共享和记忆持久化的核心问题，与 RAG 技术路线相关。"
+  },
+  {
+    "title": "xiaochong/hi-kid",
+    "url": "https://github.com/xiaochong/hi-kid",
+    "source": "github_trending",
+    "popularity": 40,
+    "summary": "面向非英语国家儿童的 AI 英语口语练习桌面应用，基于 React 和 TypeScript 构建，支持本地 AI 离线运行，提供语音对话练习功能。展示了 AI 语音交互在教育场景的落地应用。"
+  },
+  {
+    "title": "he-yufeng/RepoWiki",
+    "url": "https://github.com/he-yufeng/RepoWiki",
+    "source": "github_trending",
+    "popularity": 36,
+    "summary": "开源的 DeepWiki 替代品，可通过终端或浏览器为任意代码库自动生成全面的 Wiki 文档。结合 LLM 与 PageRank 算法分析代码结构，属于 AI 辅助开发工具领域。"
+  },
+  {
+    "title": "vunone/ennoia",
+    "url": "https://github.com/vunone/ennoia",
+    "source": "github_trending",
+    "popularity": 35,
+    "summary": "声明式文档索引框架（DDI），用 Python 定义 Schema 即可提取结构化索引并实现智能搜索。面向 RAG 管线和语义检索场景，提供了一种新的文档处理与检索增强生成的方法论。"
+  },
+  {
+    "title": "bluegalaxy111/awesome-vibe-coding",
+    "url": "https://github.com/bluegalaxy111/awesome-vibe-coding",
+    "source": "github_trending",
+    "popularity": 27,
+    "summary": "精选 300+ 项 Vibe Coding 工具、平台和资源合集，涵盖 AI Agent、Claude Code、Copilot、Cursor、MCP 协议、Prompt Engineering 等方向。是了解 AI 辅助编程生态全貌的优质资源索引。"
+  },
+  {
+    "title": "twaldin/hone",
+    "url": "https://github.com/twaldin/hone",
+    "source": "github_trending",
+    "popularity": 26,
+    "summary": "基于 GEPA 算法的 CLI Prompt 优化器，利用 Claude Code、Codex、OpenCode、Gemini 等编码 CLI 订阅作为变异引擎，无需额外 API Key。实现了自动化 Prompt 迭代优化，属于 Prompt Engineering 前沿工具。"
+  },
+  {
+    "title": "MatthewK78/Rose",
+    "url": "https://github.com/MatthewK78/Rose",
+    "source": "github_trending",
+    "popularity": 23,
+    "summary": "Rose：基于范围归一化梯度更新的无状态 PyTorch 优化器（Range-Of-Slice Equilibration）。针对 LLM 预训练、LoRA 微调、扩散模型等场景设计，涵盖 Adam、SGD 等优化器算法改进，是深度学习训练基础设施层面的创新。"
+  },
+  {
+    "title": "ycedrick/ghostwriter",
+    "url": "https://github.com/ycedrick/ghostwriter",
+    "source": "github_trending",
+    "popularity": 23,
+    "summary": "面向 AI 编码助手的上下文优化工具，通过聚焦失败相关的代码逻辑来降低 API 成本并提升调试准确性，即使文件超过标准 Token 限制也能高效处理。支持 Codex CLI、Gemini CLI 等多种 LLM Agent。"
+  },
+  {
+    "title": "adrian803/LingXi",
+    "url": "https://github.com/adrian803/LingXi",
+    "source": "github_trending",
+    "popularity": 21,
+    "summary": "灵犀：源自腾讯安全黑客松的多 Agent CTF 和渗透测试框架，结合 LLM、RAG 和 MCP 协议，支持 Docker 部署和 Kali Linux 环境。展示了 AI Agent 在网络安全攻防领域的实际应用。"
+  },
+  {
+    "title": "LehaoLin/hermes-gate",
+    "url": "https://github.com/LehaoLin/hermes-gate",
+    "source": "github_trending",
+    "popularity": 17,
+    "summary": "Hermes Gate：管理远程 Hermes Agent 会话的终端 TUI 工具，支持自动重连、detach 模式和零配置启动。面向 Claude Code、OpenClaw、Codex 等 AI Agent 的运维管理场景，简化了多 Agent 会话的管理流程。"
+  },
+  {
+    "title": "praneybehl/llm-wiki-plugin",
+    "url": "https://github.com/praneybehl/llm-wiki-plugin",
+    "source": "github_trending",
+    "popularity": 17,
+    "summary": "将 Andrej Karpathy 的 LLM Wiki 模式实现为 Claude Code 插件，可将积累的知识源转化为自维护、可扩展的 Markdown 知识库。属于 RAG 替代方案，是个人知识管理和 LLM 工具链的有益探索。"
+  }
+]
