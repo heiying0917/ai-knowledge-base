@@ -99,7 +99,7 @@ allowed-tools:
 ```json
 [
   {
-    "id": "gh-20260420-deepseek-r1",
+    "id": "github-20260317-001",
     "title": "DeepSeek-R1 开源推理模型发布",
     "source_url": "https://github.com/deepseek-ai/DeepSeek-R1",
     "source_type": "github_trending",
@@ -136,7 +136,7 @@ allowed-tools:
 
 | 字段 | 类型 | 必填 | 说明 |
 |------|------|------|------|
-| `id` | string | 是 | 唯一标识，格式 `gh-{日期}-{简短标识}`，继承自原始采集数据 |
+| `id` | string | 是 | 唯一标识，格式 `{source}-{YYYYMMDD}-{NNN}`, 示例：github-20260317-001，继承自原始采集数据 |
 | `title` | string | 是 | 中文标题，简洁概括项目核心，继承自原始采集数据 |
 | `source_url` | string | 是 | 项目原始链接，继承自原始采集数据 |
 | `source_type` | string | 是 | 来源类型，固定为 `github_trending`，继承自原始采集数据 |
@@ -144,14 +144,11 @@ allowed-tools:
 | `tags` | string[] | 是 | 标签，3-5 个，从预定义标签集中选取，由 analyzer 重新分配 |
 | `category` | string | 是 | 分类: `model-release` / `paper` / `tool` / `tutorial` / `industry`，由 analyzer 判定 |
 | `importance` | string | 是 | 重要性: `high`(score ≥ 7) / `medium`(5 ≤ score ≤ 6) / `low`(score ≤ 4)，由 analyzer 根据评分映射 |
-| `status` | string | 是 | 状态，由原始的 `raw` 变更为 `analyzed` |
+| `status` | string | 是 | 状态，可选值：`raw`、`analyzed`、`published` |
 | `language` | string | 是 | 内容语言标识，固定为 `zh-CN`，继承自原始采集数据 |
 | `collected_at` | string | 是 | ISO 8601 采集时间，继承自原始采集数据 |
 | `analyzed_at` | string | 是 | ISO 8601 分析完成时间，由 analyzer 生成 |
 | `metadata` | object | 否 | 来源相关元数据（stars、language、forks 等），继承自原始采集数据 |
-| `collected_by` | string | 是 | 采集者标识，固定为 `collector`，继承自原始采集数据 |
-| `raw_written_by` | string | 是 | raw 文件写入者，固定为 `orchestrator`，继承自原始采集数据 |
-| `analyzed_by` | string | 是 | 分析者标识，固定为 `analyzer`，由 analyzer 填写 |
 | `analysis` | object | 是 | 分析详情，由 analyzer 生成，详见下方 |
 
 #### analysis 字段
@@ -161,17 +158,3 @@ allowed-tools:
 | `analysis.highlights` | string[] | 是 | 技术亮点，2-3 条，必须引用具体指标或方法名称，禁止空洞描述 |
 | `analysis.score` | number | 是 | 评分，1-10 整数，单次分析中 9-10 分不超过 2 个 |
 | `analysis.score_reason` | string | 是 | 评分理由，说明为什么是这个分数而不是更高或更低 |
-
-#### 字段来源溯源
-
-| 字段 | 来源 | 说明 |
-|------|------|------|
-| `id` / `title` / `source_url` / `source_type` / `collected_at` / `metadata` / `collected_by` / `raw_written_by` / `language` | 原始采集数据 | 直接继承，analyzer 不修改 |
-| `summary` | analyzer | 基于原始摘要精炼，≤50 字 |
-| `tags` | analyzer | 基于分析结果重新分配，3-5 个 |
-| `category` | analyzer | 根据项目性质判定分类 |
-| `importance` | analyzer | 根据 score 映射: high/medium/low |
-| `status` | analyzer | 从 `raw` 变更为 `analyzed` |
-| `analyzed_at` | analyzer | 分析完成时的时间戳 |
-| `analyzed_by` | analyzer | 固定值 `analyzer` |
-| `analysis` | analyzer | 分析详情（highlights、score、score_reason） |
