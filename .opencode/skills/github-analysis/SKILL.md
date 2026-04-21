@@ -32,7 +32,7 @@ allowed-tools:
 ### 1. 读取最新采集文件
 
 - 使用 Glob 扫描 `knowledge/raw/` 目录，找到最近的采集文件
-- 仅关注文件名格式为 `github-trending-YYYY-MM-DD*.json` 的文件
+- 仅关注文件名格式为 `github-trending-YYYY-MM-DD-*.json` 的文件
 - 优先处理当天文件，若无则处理最近一天的文件
 - 使用 Read 读取文件内容，解析 JSON
 
@@ -83,7 +83,7 @@ allowed-tools:
 
 将分析结果以数组形式返回，每条包含分析后的完整知识条目。
 
-**注意**：本技能不执行文件写入，分析结果交由 orchestrator 透传。
+**注意**：本技能不执行文件写入，分析结果交由 orchestrator 透传写入 `knowledge/articles/`。编排层写入路径: `knowledge/articles/github-trending-YYYY-MM-DD-HHMM.json`。
 
 ## 注意事项
 

@@ -59,8 +59,9 @@ ai-knowledge-base/
 │   │   └── distribute.py    # 多渠道分发技能
 │   └── package.json
 ├── knowledge/
-│   ├── raw/                 # 原始采集数据（按日期归档）
-│   └── articles/            # 经分析整理后的知识条目 JSON
+│   ├── raw/                 # 原始采集数据，{source}-{yyyy-mm-dd}-{HHMM}.json
+│   ├── articles/            # 分析后的知识条目，{source}-{yyyy-mm-dd}-{HHMM}.json
+│   └── publish/             # 整理后的推送数据，{source}-{yyyy-mm-dd}-{HHMM}.json
 ├── AGENTS.md                # 本文件 — 项目契约
 └── .gitignore
 ```
@@ -116,7 +117,7 @@ ai-knowledge-base/
 | **编排** | `orchestrator`（主 Agent） | 接收用户指令、调度子 Agent、传递数据、写入文件、状态流转管理 | 用户指令 / 定时触发 | 文件落盘、子 Agent 调度 |
 | 采集 | `collector` | 定时爬取 GitHub Trending / Hacker News，提取 AI 相关条目原始数据 | 定时触发 / 手动指令 | JSON 数据（交由 orchestrator 写入） |
 | 分析 | `analyzer` | 对原始数据去重、AI 摘要生成、标签分类、重要性评级 | `knowledge/raw/` 中的原始数据 | 状态为 `analyzed` 的知识条目（交由 orchestrator 传递） |
-| 整理 | `organizer` | 将分析后的条目格式化为推送内容，分发到 Telegram / 飞书，归档到 `knowledge/articles/` | 状态为 `analyzed` 的条目 | 推送消息 + 状态为 `published` 的归档文件 |
+| 整理 | `organizer` | 对分析后的条目执行去重、格式校验、状态流转、格式化为推送内容 | `knowledge/articles/` 中的分析条目 | 整理后的 JSON（含推送文本），交编排层写入 `knowledge/publish/` |
 
 ### 编排层（orchestrator）职责
 
@@ -143,11 +144,13 @@ ai-knowledge-base/
                                     ↓ 调度
                                  analyzer（分析，无 Write）
                                     ↓ 返回分析结果
-                                 orchestrator（传递）
+                                 orchestrator（写入 knowledge/articles/）
                                     ↓ 调度
-                                 organizer（整理，仅写 knowledge/articles/）
+                                 organizer（整理，无 Write）
+                                    ↓ 返回整理结果
+                                 orchestrator（写入 knowledge/publish/）
                                     ↓
-                                 [Telegram/飞书] + knowledge/articles/
+                                 [Telegram/飞书]
 ```
 
 ### 数据流转约定

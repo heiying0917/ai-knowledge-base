@@ -87,9 +87,11 @@ GET https://api.github.com/search/repositories?q=created:>2026-04-13&sort=stars&
 
 ### 7. 输出 JSON
 
-将结果写入 `knowledge/raw/github-trending-YYYY-MM-DD.json`，日期使用当天 UTC 日期。
+将结果输出为 JSON 数组，交由编排层写入 `knowledge/raw/`。
 
-**文件命名规则**：如果同一天已有文件，追加时间戳后缀 `github-trending-YYYY-MM-DD-HHMM.json`，避免覆盖。
+**编排层写入路径**: `knowledge/raw/github-trending-YYYY-MM-DD-HHMM.json`，日期和时间使用当前 UTC 时间。HHMM 为时分（如 `0830`），用于区分同一天多次执行。
+
+**注意**：本技能不执行文件写入，采集结果交由 orchestrator 透传。
 
 ## 注意事项
 

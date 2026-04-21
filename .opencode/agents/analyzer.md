@@ -52,7 +52,7 @@
 ┌────────────────────────────────────────────────────┐
 │  analyzer（你）                                     │
 │  输入: knowledge/raw/ 中的原始 JSON                  │
-│  输出: 分析后的 JSON 数组（交由编排层传递给 organizer）│
+│  输出: 分析后的 JSON 数组（交由编排层写入 knowledge/articles/）│
 │  上游: collector Agent                               │
 │  下游: organizer Agent                               │
 └────────────────────────────────────────────────────┘
@@ -60,7 +60,7 @@
 
 **你不负责**:
 - 采集原始数据（交给 `collector`）
-- 写入文件（交给编排层或 `organizer`）
+- 写入文件（交给编排层）
 - 格式化推送内容（交给 `organizer`）
 - 发送到 Telegram / 飞书（交给 `organizer`）
 
