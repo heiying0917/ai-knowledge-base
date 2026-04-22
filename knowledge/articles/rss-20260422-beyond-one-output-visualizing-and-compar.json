@@ -1,0 +1,27 @@
+{
+  "id": "rss-20260422-beyond-one-output-visualizing-and-compar",
+  "title": "超越单一输出：语言模型生成分布的可视化与比较",
+  "source_url": "https://arxiv.org/abs/2604.18724",
+  "source_type": "rss",
+  "summary": "该论文指出用户通常通过单一输出来评估语言模型，但每个输出只是可能完成分布中的一个样本，这种交互方式隐藏了分布结构（如模式、罕见边缘情况和对小提示变化的敏感性），导致用户在开放式任务中从个别案例过度泛化。基于对13名使用语言模型的研究人员的形成性研究，论文提出了一种可视化方法，帮助用户理解和比较语言模型生成的分布，从而改善提示迭代和模型评估。",
+  "tags": [
+    "llm",
+    "paper",
+    "evaluation",
+    "visualization",
+    "reasoning"
+  ],
+  "category": "paper",
+  "importance": "medium",
+  "status": "analyzed",
+  "language": "zh-CN",
+  "collected_at": "2026-04-22T08:15:28Z",
+  "analyzed_at": "2026-04-22T08:15:33Z",
+  "metadata": {
+    "feed_name": "arxiv_cs_ai"
+  },
+  "analysis": {
+    "score": 6
+  },
+  "published_at": "2026-04-22T08:15:43Z"
+}

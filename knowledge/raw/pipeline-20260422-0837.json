@@ -1,0 +1,273 @@
+[
+  {
+    "id": "rss-20260422-a-centralised-approach-to-ai-llm-agent-i",
+    "title": "使用Git子模块集中管理AI/LLM智能体指令",
+    "source_url": "https://www.appsoftware.com/blog/a-centralised-approach-to-ai-llm-agent-instruction-using-git-submodules",
+    "source_type": "rss",
+    "summary": "本文提出一种利用Git子模块集中管理AI/LLM智能体指令的方法。通过将指令文件（如system prompts、知识库、工具定义等）存储在独立的Git仓库中，并以子模块形式嵌入到多个智能体项目中，实现指令的统一版本控制、更新和分发。该方法解决了多智能体场景下指令分散、难以同步的问题，提升了指令维护效率和一致性。文章详细介绍了实现步骤、最佳实践及潜在风险（如子模块冲突、权限管理），并提供了实际案例。适用于需要管理多个LLM智能体或Agent系统的开发团队，尤其适合企业级应用。",
+    "tags": [
+      "agent",
+      "tool",
+      "git",
+      "instruction-management",
+      "best-practice"
+    ],
+    "category": "tutorial",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:36:54Z",
+    "analyzed_at": "2026-04-22T08:37:02Z",
+    "metadata": {
+      "feed_name": "hackernews"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:37:35Z"
+  },
+  {
+    "id": "rss-20260422-ask-hn-why-are-so-many-rolling-out-their",
+    "title": "AI/LLM Agent沙箱方案为何百花齐放？",
+    "source_url": "https://news.ycombinator.com/item?id=46699324",
+    "source_type": "rss",
+    "summary": "Hacker News上的一则讨论引发关注：越来越多开发者正在为Claude Code等编码Agent构建自定义沙箱（Docker/VM、firejail/bubblewrap、文件/网络访问控制脚本）。提问者好奇为何大家选择DIY，以及一个“足够好”的标准应是什么样。评论指出，现有方案缺乏统一的安全边界、细粒度权限管理和易用性，导致开发者不得不自行组合工具。讨论反映了AI Agent安全执行环境的迫切需求，以及行业标准尚未形成的现状。",
+    "tags": [
+      "agent",
+      "safety",
+      "tool",
+      "open-source",
+      "industry"
+    ],
+    "category": "industry",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:36:54Z",
+    "analyzed_at": "2026-04-22T08:37:06Z",
+    "metadata": {
+      "feed_name": "hackernews"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:37:35Z"
+  },
+  {
+    "id": "rss-20260422-bending-emacs-episode-10-ai-llm-agent-sh",
+    "title": "Emacs中AI/LLM agent-shell集成教程",
+    "source_url": "https://www.youtube.com/watch?v=R2Ucr3amgGg",
+    "source_type": "rss",
+    "summary": "本视频教程展示了如何在Emacs编辑器中集成AI/LLM agent-shell，实现智能代码补全、命令执行和交互式编程。通过将大语言模型嵌入Emacs环境，开发者可以直接在编辑器内调用AI助手，提升编码效率。教程覆盖了agent-shell的安装、配置和实际使用场景，适合Emacs用户和AI工具爱好者。",
+    "tags": [
+      "llm",
+      "agent",
+      "tool",
+      "tutorial",
+      "emacs"
+    ],
+    "category": "tutorial",
+    "importance": "low",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:36:54Z",
+    "analyzed_at": "2026-04-22T08:37:09Z",
+    "metadata": {
+      "feed_name": "hackernews"
+    },
+    "analysis": {
+      "score": 3
+    },
+    "published_at": "2026-04-22T08:37:35Z"
+  },
+  {
+    "id": "rss-20260422-show-hn-mirror-ai-llm-agent-that-takes-a",
+    "title": "Mirror AI：跨平台桌面行动导向LLM代理",
+    "source_url": "https://themirrorai.com",
+    "source_type": "rss",
+    "summary": "Mirror AI 是一个跨平台桌面应用，旨在超越传统聊天机器人的文本回复限制，直接执行终端命令、文件操作、API调用、发送邮件/消息、安排日历事件、查询数据库等操作，并能将多个步骤串联成一次请求。该项目由开发者因频繁在ChatGPT与Shell/IDE/Gmail间复制粘贴而创建，旨在消除“OK，现在去执行”的断点。它代表了LLM从“对话助手”向“行动代理”的实用演进，尤其适合开发者、运维人员和自动化场景。",
+    "tags": [
+      "agent",
+      "tool",
+      "open-source",
+      "llm",
+      "automation"
+    ],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:36:54Z",
+    "analyzed_at": "2026-04-22T08:37:13Z",
+    "metadata": {
+      "feed_name": "hackernews"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:37:35Z"
+  },
+  {
+    "id": "rss-20260422-on-solving-the-multiple-variable-gapped-",
+    "title": "可变间隙最长公共子序列问题的求解方法",
+    "source_url": "https://arxiv.org/abs/2604.18645",
+    "source_type": "rss",
+    "summary": "本文研究了可变间隙最长公共子序列（VGLCS）问题，这是经典LCS问题的推广，允许在解的连续字符之间设置灵活的间隙约束。该问题在分子序列比对（需考虑残基间的结构距离约束）和时间序列分析（事件需在指定时间延迟内发生）中有重要应用。作者提出了一种搜索算法来解决该问题，为生物信息学和时序数据分析提供了新的理论工具。",
+    "tags": [
+      "paper",
+      "algorithm",
+      "sequence-analysis",
+      "bioinformatics"
+    ],
+    "category": "paper",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:36:58Z",
+    "analyzed_at": "2026-04-22T08:37:16Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:37:35Z"
+  },
+  {
+    "id": "rss-20260422-beyond-one-output-visualizing-and-compar",
+    "title": "超越单次输出：语言模型生成分布的可视化与比较",
+    "source_url": "https://arxiv.org/abs/2604.18724",
+    "source_type": "rss",
+    "summary": "该论文指出用户通常通过单次输出与语言模型交互，但每次输出只是可能完成分布的单一采样，这隐藏了分布结构（如模式、罕见边缘情况和对小提示变化的敏感性），导致用户从个别案例过度泛化。基于对13名使用语言模型的研究人员的形成性研究，论文提出了一种可视化方法，用于展示和比较语言模型生成的分布，帮助用户更好地理解模型行为、识别模式并改进提示设计。该工作旨在提升人机交互中对模型不确定性的认知，为提示工程和模型评估提供新视角。",
+    "tags": [
+      "llm",
+      "paper",
+      "visualization",
+      "evaluation",
+      "human-computer-interaction"
+    ],
+    "category": "paper",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:36:58Z",
+    "analyzed_at": "2026-04-22T08:37:20Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:37:35Z"
+  },
+  {
+    "id": "rss-20260422-ares-adaptive-red-teaming-and-end-to-end",
+    "title": "ARES：策略-奖励系统的自适应红队测试与端到端修复",
+    "source_url": "https://arxiv.org/abs/2604.18789",
+    "source_type": "rss",
+    "summary": "本文提出ARES框架，针对RLHF中奖励模型（RM）作为单点故障的漏洞，创新性地识别并修复“系统性弱点”——即核心LLM与RM同时失效的场景。现有红队测试仅关注策略层缺陷，而ARES通过自适应红队测试与端到端修复，同时优化策略和RM，提升对齐安全性。该方法填补了RLHF安全评估的空白，为LLM对齐提供了更鲁棒的防御机制。",
+    "tags": [
+      "llm",
+      "safety",
+      "rlhf",
+      "red-teaming",
+      "reward-model",
+      "paper"
+    ],
+    "category": "paper",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:36:58Z",
+    "analyzed_at": "2026-04-22T08:37:24Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 8
+    },
+    "published_at": "2026-04-22T08:37:35Z"
+  },
+  {
+    "id": "rss-20260422-ai-scientists-produce-results-without-re",
+    "title": "LLM科学智能体缺乏科学推理规范性的实证研究",
+    "source_url": "https://arxiv.org/abs/2604.18805",
+    "source_type": "rss",
+    "summary": "该论文系统评估了基于大语言模型（LLM）的科学智能体在八个科学领域的推理规范性。通过超过25,000次智能体运行，从工作流执行和假设驱动探究两个互补视角，发现LLM智能体虽然能完成科学任务，但其推理过程往往不符合科学探究的认知规范（如自我修正、证据权衡等）。研究揭示了当前AI科学家在科学推理上的根本性缺陷，对AI辅助科研的可信度和可靠性提出了重要警示。",
+    "tags": [
+      "llm",
+      "agent",
+      "reasoning",
+      "evaluation",
+      "safety",
+      "paper"
+    ],
+    "category": "paper",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:36:58Z",
+    "analyzed_at": "2026-04-22T08:37:28Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 8
+    },
+    "published_at": "2026-04-22T08:37:35Z"
+  },
+  {
+    "id": "rss-20260422-quantum-inspired-qubit-qutrit-neural-net",
+    "title": "量子启发的三态神经网络用于实时金融预测",
+    "source_url": "https://arxiv.org/abs/2604.18838",
+    "source_type": "rss",
+    "summary": "该研究比较了人工神经网络(ANN)、量子比特神经网络(QQBN)和量子三态神经网络(QQTN)在股票预测中的性能。通过详细阐述方法论、架构和训练流程，揭示了不同模型在训练时间和性能指标上的显著差异。虽然所有模型都表现出稳健的预测能力，但量子启发的神经网络（特别是QQTN）在实时金融预测中展现出潜在优势。该论文探索了量子计算概念与经典机器学习的融合，为金融时间序列预测提供了新思路。",
+    "tags": [
+      "paper",
+      "quantum",
+      "neural-network",
+      "financial-forecasting",
+      "machine-learning"
+    ],
+    "category": "paper",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:36:58Z",
+    "analyzed_at": "2026-04-22T08:37:32Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 5
+    },
+    "published_at": "2026-04-22T08:37:35Z"
+  },
+  {
+    "id": "rss-20260422-human-guided-harm-recovery-for-computer-",
+    "title": "人机协作的计算机代理危害恢复机制",
+    "source_url": "https://arxiv.org/abs/2604.18847",
+    "source_type": "rss",
+    "summary": "本文针对LM代理在真实计算机系统执行动作时可能造成的危害，提出了一个被忽视的挑战——危害恢复。作者形式化了后执行安全防护中的危害恢复问题：即在代理从有害状态最优地引导回安全状态时，如何与人类偏好对齐。该研究为计算机使用代理的安全防护提供了新的理论框架，强调在预防失败后如何有效修复危害，具有重要的实际应用价值。",
+    "tags": [
+      "llm",
+      "agent",
+      "safety",
+      "paper",
+      "human-in-the-loop"
+    ],
+    "category": "paper",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:36:58Z",
+    "analyzed_at": "2026-04-22T08:37:35Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 7
+    },
+    "published_at": "2026-04-22T08:37:35Z"
+  }
+]

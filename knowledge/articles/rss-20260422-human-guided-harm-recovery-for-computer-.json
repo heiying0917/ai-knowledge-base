@@ -1,0 +1,27 @@
+{
+  "id": "rss-20260422-human-guided-harm-recovery-for-computer-",
+  "title": "人机协作的计算机代理危害恢复机制",
+  "source_url": "https://arxiv.org/abs/2604.18847",
+  "source_type": "rss",
+  "summary": "本文针对LM代理在真实计算机系统执行动作时可能造成的危害，提出了一个被忽视的挑战——危害恢复。作者形式化了后执行安全防护中的危害恢复问题：即在代理从有害状态最优地引导回安全状态时，如何与人类偏好对齐。该研究为计算机使用代理的安全防护提供了新的理论框架，强调在预防失败后如何有效修复危害，具有重要的实际应用价值。",
+  "tags": [
+    "llm",
+    "agent",
+    "safety",
+    "paper",
+    "human-in-the-loop"
+  ],
+  "category": "paper",
+  "importance": "high",
+  "status": "analyzed",
+  "language": "zh-CN",
+  "collected_at": "2026-04-22T08:36:58Z",
+  "analyzed_at": "2026-04-22T08:37:35Z",
+  "metadata": {
+    "feed_name": "arxiv_cs_ai"
+  },
+  "analysis": {
+    "score": 7
+  },
+  "published_at": "2026-04-22T08:37:35Z"
+}

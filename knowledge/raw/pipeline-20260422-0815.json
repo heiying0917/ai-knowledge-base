@@ -1,0 +1,138 @@
+[
+  {
+    "id": "rss-20260422-on-solving-the-multiple-variable-gapped-",
+    "title": "可变间隙最长公共子序列问题求解方法",
+    "source_url": "https://arxiv.org/abs/2604.18645",
+    "source_type": "rss",
+    "summary": "本文研究了可变间隙最长公共子序列（VGLCS）问题，这是经典LCS问题的泛化，允许在解的连续字符之间灵活设置间隙约束。该问题在分子序列比较中需要尊重残基之间的结构距离约束，在时间序列分析中要求事件在指定时间延迟内发生。论文提出了一种搜索算法来解决该问题，为生物信息学和时序数据分析提供了新的理论工具。",
+    "tags": [
+      "paper",
+      "algorithm",
+      "sequence-analysis",
+      "bioinformatics"
+    ],
+    "category": "paper",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:15:28Z",
+    "analyzed_at": "2026-04-22T08:15:30Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:15:43Z"
+  },
+  {
+    "id": "rss-20260422-beyond-one-output-visualizing-and-compar",
+    "title": "超越单一输出：语言模型生成分布的可视化与比较",
+    "source_url": "https://arxiv.org/abs/2604.18724",
+    "source_type": "rss",
+    "summary": "该论文指出用户通常通过单一输出来评估语言模型，但每个输出只是可能完成分布中的一个样本，这种交互方式隐藏了分布结构（如模式、罕见边缘情况和对小提示变化的敏感性），导致用户在开放式任务中从个别案例过度泛化。基于对13名使用语言模型的研究人员的形成性研究，论文提出了一种可视化方法，帮助用户理解和比较语言模型生成的分布，从而改善提示迭代和模型评估。",
+    "tags": [
+      "llm",
+      "paper",
+      "evaluation",
+      "visualization",
+      "reasoning"
+    ],
+    "category": "paper",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:15:28Z",
+    "analyzed_at": "2026-04-22T08:15:33Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:15:43Z"
+  },
+  {
+    "id": "rss-20260422-ares-adaptive-red-teaming-and-end-to-end",
+    "title": "ARES：自适应红队测试与策略-奖励系统端到端修复",
+    "source_url": "https://arxiv.org/abs/2604.18789",
+    "source_type": "rss",
+    "summary": "本文提出ARES框架，针对RLHF中奖励模型（RM）作为单点故障的漏洞，通过自适应红队测试发现策略与RM协同失效的系统性弱点，并实现端到端修复。现有红队方法仅关注策略层缺陷，而ARES首次系统性识别并修复LLM与RM同时失效的场景。该方法通过迭代生成对抗性输入，联合优化策略和RM，提升对齐安全性。实验表明，ARES能有效发现传统方法遗漏的漏洞，显著降低不安全输出率，为LLM对齐安全提供新范式。",
+    "tags": [
+      "llm",
+      "safety",
+      "rlhf",
+      "red-teaming",
+      "reward-model",
+      "paper"
+    ],
+    "category": "paper",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:15:28Z",
+    "analyzed_at": "2026-04-22T08:15:37Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 8
+    },
+    "published_at": "2026-04-22T08:15:43Z"
+  },
+  {
+    "id": "rss-20260422-ai-scientists-produce-results-without-re",
+    "title": "AI科学家缺乏科学推理：LLM科研代理的认知缺陷评估",
+    "source_url": "https://arxiv.org/abs/2604.18805",
+    "source_type": "rss",
+    "summary": "该论文系统评估了基于大语言模型（LLM）的科研代理在八个科学领域的推理能力，通过超过25,000次代理运行，从工作流执行和假设驱动研究两个维度进行分析。研究发现，尽管LLM代理能模拟科研流程，但其推理过程缺乏科学探究所需的认知规范，无法实现自我修正。研究揭示了当前AI科学家系统在遵循科学方法论方面的根本性缺陷，对AI辅助科研的可靠性和可信度提出重要警示。",
+    "tags": [
+      "llm",
+      "agent",
+      "reasoning",
+      "evaluation",
+      "paper",
+      "safety"
+    ],
+    "category": "paper",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:15:28Z",
+    "analyzed_at": "2026-04-22T08:15:40Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 8
+    },
+    "published_at": "2026-04-22T08:15:43Z"
+  },
+  {
+    "id": "rss-20260422-quantum-inspired-qubit-qutrit-neural-net",
+    "title": "量子启发的qubit-qutrit神经网络用于实时金融预测",
+    "source_url": "https://arxiv.org/abs/2604.18838",
+    "source_type": "rss",
+    "summary": "该研究比较了人工神经网络(ANN)、量子qubit神经网络(QQBN)和量子qutrit神经网络(QQTN)在股票预测中的性能。通过详细阐述方法、架构和训练流程，研究揭示了不同模型在训练时间和性能指标上的显著差异。所有模型均展现出稳健的预测能力，但量子启发的神经网络（特别是QQTN）在实时金融预测任务中表现出潜在优势。论文为量子机器学习在金融时间序列分析中的应用提供了新的视角和实验证据。",
+    "tags": [
+      "paper",
+      "quantum",
+      "neural-network",
+      "financial-forecasting",
+      "machine-learning"
+    ],
+    "category": "paper",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:15:28Z",
+    "analyzed_at": "2026-04-22T08:15:43Z",
+    "metadata": {
+      "feed_name": "arxiv_cs_ai"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:15:43Z"
+  }
+]

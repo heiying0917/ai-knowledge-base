@@ -1,0 +1,27 @@
+{
+  "id": "rss-20260422-quantum-inspired-qubit-qutrit-neural-net",
+  "title": "量子启发的qubit-qutrit神经网络用于实时金融预测",
+  "source_url": "https://arxiv.org/abs/2604.18838",
+  "source_type": "rss",
+  "summary": "该研究比较了人工神经网络(ANN)、量子qubit神经网络(QQBN)和量子qutrit神经网络(QQTN)在股票预测中的性能。通过详细阐述方法、架构和训练流程，研究揭示了不同模型在训练时间和性能指标上的显著差异。所有模型均展现出稳健的预测能力，但量子启发的神经网络（特别是QQTN）在实时金融预测任务中表现出潜在优势。论文为量子机器学习在金融时间序列分析中的应用提供了新的视角和实验证据。",
+  "tags": [
+    "paper",
+    "quantum",
+    "neural-network",
+    "financial-forecasting",
+    "machine-learning"
+  ],
+  "category": "paper",
+  "importance": "medium",
+  "status": "analyzed",
+  "language": "zh-CN",
+  "collected_at": "2026-04-22T08:15:28Z",
+  "analyzed_at": "2026-04-22T08:15:43Z",
+  "metadata": {
+    "feed_name": "arxiv_cs_ai"
+  },
+  "analysis": {
+    "score": 6
+  },
+  "published_at": "2026-04-22T08:15:43Z"
+}

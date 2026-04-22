@@ -1,0 +1,28 @@
+{
+  "id": "rss-20260422-ai-scientists-produce-results-without-re",
+  "title": "AI科学家缺乏科学推理：LLM科研代理的认知缺陷评估",
+  "source_url": "https://arxiv.org/abs/2604.18805",
+  "source_type": "rss",
+  "summary": "该论文系统评估了基于大语言模型（LLM）的科研代理在八个科学领域的推理能力，通过超过25,000次代理运行，从工作流执行和假设驱动研究两个维度进行分析。研究发现，尽管LLM代理能模拟科研流程，但其推理过程缺乏科学探究所需的认知规范，无法实现自我修正。研究揭示了当前AI科学家系统在遵循科学方法论方面的根本性缺陷，对AI辅助科研的可靠性和可信度提出重要警示。",
+  "tags": [
+    "llm",
+    "agent",
+    "reasoning",
+    "evaluation",
+    "paper",
+    "safety"
+  ],
+  "category": "paper",
+  "importance": "high",
+  "status": "analyzed",
+  "language": "zh-CN",
+  "collected_at": "2026-04-22T08:15:28Z",
+  "analyzed_at": "2026-04-22T08:15:40Z",
+  "metadata": {
+    "feed_name": "arxiv_cs_ai"
+  },
+  "analysis": {
+    "score": 8
+  },
+  "published_at": "2026-04-22T08:15:43Z"
+}

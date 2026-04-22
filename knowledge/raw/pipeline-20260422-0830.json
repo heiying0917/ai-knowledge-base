@@ -1,0 +1,193 @@
+[
+  {
+    "id": "github-20260422-n8n-io-n8n",
+    "title": "n8n：具备原生AI能力的开源工作流自动化平台",
+    "source_url": "https://github.com/n8n-io/n8n",
+    "source_type": "github_trending",
+    "summary": "n8n是一个fair-code许可的工作流自动化平台，支持可视化构建与自定义代码结合，提供400+集成。其核心亮点在于原生AI能力，允许用户轻松集成LLM、构建AI Agent和自动化流程。支持自托管和云服务，适用于从简单任务到复杂AI工作流的多种场景。该项目在GitHub上拥有高星标，是构建AI自动化工作流的实用工具。",
+    "tags": [
+      "tool",
+      "workflow",
+      "automation",
+      "ai",
+      "open-source",
+      "agent"
+    ],
+    "category": "tool",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:29:46Z",
+    "analyzed_at": "2026-04-22T08:29:51Z",
+    "metadata": {
+      "stars": 185071,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "apis",
+        "automation",
+        "cli",
+        "data-flow",
+        "development",
+        "integration-framework",
+        "integrations",
+        "ipaas",
+        "low-code",
+        "low-code-platform",
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "n8n",
+        "no-code",
+        "self-hosted",
+        "typescript",
+        "workflow",
+        "workflow-automation"
+      ],
+      "created_at": "2019-06-22T09:24:21Z",
+      "updated_at": "2026-04-22T08:26:11Z"
+    },
+    "analysis": {
+      "score": 7
+    },
+    "published_at": "2026-04-22T08:30:03Z"
+  },
+  {
+    "id": "github-20260422-significant-gravitas-autogpt",
+    "title": "AutoGPT：人人可用的自主AI代理平台",
+    "source_url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "source_type": "github_trending",
+    "summary": "AutoGPT 是一个开源项目，旨在提供人人可用的自主AI代理工具。它基于大语言模型（LLM），能够自动分解任务、执行操作并迭代优化，无需人工持续干预。该项目支持多种LLM后端（如OpenAI、Anthropic等），并提供插件系统以扩展功能。AutoGPT 的核心价值在于降低AI代理的使用门槛，让开发者、企业和个人能够快速构建自动化工作流，例如网页浏览、文件操作、代码生成等。作为早期自主代理的代表性项目，它推动了AI代理生态的发展，并持续集成最新技术（如RAG、多模态）。",
+    "tags": [
+      "agent",
+      "open-source",
+      "tool",
+      "llm",
+      "framework"
+    ],
+    "category": "tool",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:29:46Z",
+    "analyzed_at": "2026-04-22T08:29:55Z",
+    "metadata": {
+      "stars": 183662,
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "artificial-intelligence",
+        "autonomous-agents",
+        "claude",
+        "gpt",
+        "llama-api",
+        "llm",
+        "openai",
+        "python"
+      ],
+      "created_at": "2023-03-16T09:21:07Z",
+      "updated_at": "2026-04-22T08:28:40Z"
+    },
+    "analysis": {
+      "score": 8
+    },
+    "published_at": "2026-04-22T08:30:03Z"
+  },
+  {
+    "id": "github-20260422-ollama-ollama",
+    "title": "Ollama 新增支持Kimi-K2.5、GLM-5等主流模型",
+    "source_url": "https://github.com/ollama/ollama",
+    "source_type": "github_trending",
+    "summary": "Ollama 是一个流行的本地大模型运行工具，支持用户轻松下载、运行和管理多种开源大模型。本次更新新增了对 Kimi-K2.5、GLM-5、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma 等模型的直接支持。这极大降低了开发者与爱好者本地部署和实验最新模型的门槛，无需复杂配置即可通过命令行或 API 调用这些模型。Ollama 的持续更新使其成为本地 LLM 推理和开发的核心工具之一，尤其适合快速原型验证、隐私敏感场景和离线使用。",
+    "tags": [
+      "ollama",
+      "tool",
+      "open-source",
+      "model-release",
+      "llm"
+    ],
+    "category": "tool",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:29:46Z",
+    "analyzed_at": "2026-04-22T08:30:00Z",
+    "metadata": {
+      "stars": 169674,
+      "language": "Go",
+      "topics": [
+        "deepseek",
+        "gemma",
+        "gemma3",
+        "glm",
+        "go",
+        "golang",
+        "gpt-oss",
+        "llama",
+        "llama3",
+        "llm",
+        "llms",
+        "minimax",
+        "mistral",
+        "ollama",
+        "qwen"
+      ],
+      "created_at": "2023-06-26T19:39:32Z",
+      "updated_at": "2026-04-22T08:28:58Z"
+    },
+    "analysis": {
+      "score": 7
+    },
+    "published_at": "2026-04-22T08:30:03Z"
+  },
+  {
+    "id": "github-20260422-automatic1111-stable-diffusion-webui",
+    "title": "Stable Diffusion WebUI：AUTOMATIC1111开源项目",
+    "source_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    "source_type": "github_trending",
+    "summary": "AUTOMATIC1111/stable-diffusion-webui 是一个基于 Gradio 的 Stable Diffusion 图形化界面工具，极大降低了用户使用 Stable Diffusion 进行图像生成的门槛。该项目支持多种模型（如 SD1.5、SDXL）、扩展插件、提示词优化、图像修复、超分辨率等功能，并提供了丰富的参数调节选项。作为开源社区最流行的 Stable Diffusion 前端之一，它推动了 AI 图像生成技术的普及和二次开发，成为研究者和爱好者的重要工具。",
+    "tags": [
+      "tool",
+      "open-source",
+      "multimodal",
+      "image-generation",
+      "stable-diffusion"
+    ],
+    "category": "tool",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:29:47Z",
+    "analyzed_at": "2026-04-22T08:30:03Z",
+    "metadata": {
+      "stars": 162533,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "ai-art",
+        "deep-learning",
+        "diffusion",
+        "gradio",
+        "image-generation",
+        "image2image",
+        "img2img",
+        "pytorch",
+        "stable-diffusion",
+        "text2image",
+        "torch",
+        "txt2img",
+        "unstable",
+        "upscaling",
+        "web"
+      ],
+      "created_at": "2022-08-22T14:05:26Z",
+      "updated_at": "2026-04-22T08:29:23Z"
+    },
+    "analysis": {
+      "score": 8
+    },
+    "published_at": "2026-04-22T08:30:03Z"
+  }
+]

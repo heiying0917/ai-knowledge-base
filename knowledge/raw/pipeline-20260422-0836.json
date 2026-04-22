@@ -1,0 +1,456 @@
+[
+  {
+    "id": "github-20260422-mempalace-mempalace",
+    "title": "MemPalace：开源AI记忆系统，基准测试领先",
+    "source_url": "https://github.com/MemPalace/mempalace",
+    "source_type": "github_trending",
+    "summary": "MemPalace 是一个开源的 AI 记忆系统，声称在基准测试中表现最佳。该项目旨在为 AI 应用提供高效、可扩展的记忆管理能力，支持长期上下文和个性化交互。其核心价值在于开源免费，降低了开发者构建具有记忆功能的 AI 应用的门槛。通过提供标准化的记忆存储、检索和管理接口，MemPalace 有望推动 AI 代理、对话系统和个性化助手的发展。项目在 GitHub 上开源，吸引了社区关注，但具体技术细节和性能数据需进一步验证。",
+    "tags": [
+      "open-source",
+      "tool",
+      "memory",
+      "rag",
+      "agent"
+    ],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:35:26Z",
+    "analyzed_at": "2026-04-22T08:35:32Z",
+    "metadata": {
+      "stars": 48872,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "chromadb",
+        "llm",
+        "mcp",
+        "memory",
+        "python"
+      ],
+      "created_at": "2026-04-05T01:12:07Z",
+      "updated_at": "2026-04-22T08:34:38Z"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:36:07Z"
+  },
+  {
+    "id": "github-20260422-juliusbrussee-caveman",
+    "title": "Caveman：用原始人语言减少65%Token消耗的Claude Code技能",
+    "source_url": "https://github.com/JuliusBrussee/caveman",
+    "source_type": "github_trending",
+    "summary": "Caveman是一个开源的Claude Code技能，通过将AI助手的回复风格改为原始人式简短表达（如省略冠词、使用简单词汇、减少修饰语），在保持语义完整的前提下，平均减少65%的Token消耗。该项目基于一个简单的系统提示词修改，无需额外依赖或复杂配置，即可显著降低API调用成本。对于高频使用Claude API的开发者，该工具提供了一种低成本、高收益的优化方案，尤其适合代码生成、快速问答等场景。项目已开源在GitHub，安装简便，只需一行命令即可集成到Claude Code工作流中。",
+    "tags": [
+      "llm",
+      "tool",
+      "open-source",
+      "inference",
+      "cost-optimization"
+    ],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:35:26Z",
+    "analyzed_at": "2026-04-22T08:35:37Z",
+    "metadata": {
+      "stars": 42732,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "anthropic",
+        "caveman",
+        "claude",
+        "claude-code",
+        "llm",
+        "meme",
+        "prompt-engineering",
+        "skill",
+        "tokens"
+      ],
+      "created_at": "2026-04-04T10:03:00Z",
+      "updated_at": "2026-04-22T08:34:51Z"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:36:07Z"
+  },
+  {
+    "id": "github-20260422-kyegomez-openmythos",
+    "title": "OpenMythos：从第一性原理复现Claude架构",
+    "source_url": "https://github.com/kyegomez/OpenMythos",
+    "source_type": "github_trending",
+    "summary": "OpenMythos 是一个开源项目，旨在基于公开研究文献，从第一性原理重建 Claude 模型（Anthropic 的闭源大语言模型）的架构。项目通过分析论文、博客和技术报告，尝试复现 Claude 的核心设计理念，如稀疏注意力、强化学习对齐、安全机制等。该项目为研究人员和开发者提供了理解前沿LLM内部机制的参考实现，有助于推动开源社区对先进架构的探索。尽管无法完全复现闭源模型的细节，但OpenMythos在理论重构和实验验证方面具有重要价值，尤其适合对模型架构和训练方法感兴趣的开发者。",
+    "tags": [
+      "open-source",
+      "llm",
+      "architecture",
+      "claude",
+      "research"
+    ],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:35:26Z",
+    "analyzed_at": "2026-04-22T08:35:41Z",
+    "metadata": {
+      "stars": 7910,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "anthropic",
+        "attention",
+        "claude",
+        "claude-ai",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-mythos",
+        "claude-sonnet",
+        "deepmind",
+        "gpt-5",
+        "gpt-7",
+        "jax",
+        "looped-transformers",
+        "ml",
+        "pytorch",
+        "sonnet",
+        "torch"
+      ],
+      "created_at": "2026-04-18T12:57:52Z",
+      "updated_at": "2026-04-22T08:34:31Z"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:36:07Z"
+  },
+  {
+    "id": "github-20260422-openclaw-openclaw",
+    "title": "OpenClaw：跨平台个人AI助手开源项目",
+    "source_url": "https://github.com/openclaw/openclaw",
+    "source_type": "github_trending",
+    "summary": "OpenClaw 是一个开源的跨平台个人AI助手项目，支持在任何操作系统和平台上运行。该项目以“龙虾方式”为理念，旨在提供灵活、可定制的AI交互体验。作为开源工具，它允许用户自托管AI助手，避免依赖商业服务，强调隐私和自主控制。项目可能集成了多种LLM后端，支持本地或远程推理，适合开发者构建个性化AI工作流。其价值在于推动AI助手的民主化，降低使用门槛，但具体功能和性能需进一步评估。",
+    "tags": [
+      "open-source",
+      "tool",
+      "llm",
+      "agent",
+      "framework"
+    ],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:35:26Z",
+    "analyzed_at": "2026-04-22T08:35:45Z",
+    "metadata": {
+      "stars": 362073,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "assistant",
+        "crustacean",
+        "molty",
+        "openclaw",
+        "own-your-data",
+        "personal"
+      ],
+      "created_at": "2025-11-24T10:16:47Z",
+      "updated_at": "2026-04-22T08:34:01Z"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:36:07Z"
+  },
+  {
+    "id": "github-20260422-n8n-io-n8n",
+    "title": "n8n：具备原生AI能力的工作流自动化平台",
+    "source_url": "https://github.com/n8n-io/n8n",
+    "source_type": "github_trending",
+    "summary": "n8n是一个公平代码（fair-code）的工作流自动化平台，集成了原生AI能力。它允许用户通过可视化界面构建工作流，同时支持自定义代码扩展。平台提供400多种集成，支持自托管或云服务，适用于各种自动化场景。n8n的AI功能使其能够轻松集成LLM、RAG等AI组件，实现智能工作流自动化。该项目在GitHub上拥有高星标，社区活跃，是构建AI代理和自动化流程的重要工具。",
+    "tags": [
+      "tool",
+      "workflow",
+      "automation",
+      "ai",
+      "open-source",
+      "agent",
+      "integration"
+    ],
+    "category": "tool",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:35:26Z",
+    "analyzed_at": "2026-04-22T08:35:48Z",
+    "metadata": {
+      "stars": 185071,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "apis",
+        "automation",
+        "cli",
+        "data-flow",
+        "development",
+        "integration-framework",
+        "integrations",
+        "ipaas",
+        "low-code",
+        "low-code-platform",
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "n8n",
+        "no-code",
+        "self-hosted",
+        "typescript",
+        "workflow",
+        "workflow-automation"
+      ],
+      "created_at": "2019-06-22T09:24:21Z",
+      "updated_at": "2026-04-22T08:30:20Z"
+    },
+    "analysis": {
+      "score": 8
+    },
+    "published_at": "2026-04-22T08:36:07Z"
+  },
+  {
+    "id": "github-20260422-significant-gravitas-autogpt",
+    "title": "AutoGPT：人人可用的自主AI代理平台",
+    "source_url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "source_type": "github_trending",
+    "summary": "AutoGPT是一个开源项目，旨在让每个人都能轻松使用和构建自主AI代理。它通过将大型语言模型（如GPT-4）与任务分解、记忆管理和工具调用相结合，实现自动化目标执行。用户只需设定目标，AutoGPT即可自主规划步骤、执行操作（如搜索网页、编写代码、管理文件）并迭代优化。该项目降低了AI代理的使用门槛，推动了自主AI的普及，对开发者和非技术人员均有重要价值。",
+    "tags": [
+      "agent",
+      "open-source",
+      "tool",
+      "llm",
+      "framework"
+    ],
+    "category": "tool",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:35:26Z",
+    "analyzed_at": "2026-04-22T08:35:52Z",
+    "metadata": {
+      "stars": 183662,
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "artificial-intelligence",
+        "autonomous-agents",
+        "claude",
+        "gpt",
+        "llama-api",
+        "llm",
+        "openai",
+        "python"
+      ],
+      "created_at": "2023-03-16T09:21:07Z",
+      "updated_at": "2026-04-22T08:28:40Z"
+    },
+    "analysis": {
+      "score": 8
+    },
+    "published_at": "2026-04-22T08:36:07Z"
+  },
+  {
+    "id": "github-20260422-jackchen-me-open-multi-agent",
+    "title": "Open Multi-Agent：轻量级TypeScript多智能体编排引擎",
+    "source_url": "https://github.com/JackChen-me/open-multi-agent",
+    "source_type": "github_trending",
+    "summary": "Open Multi-Agent 是一个基于 TypeScript 的多智能体编排引擎，核心设计理念是极简与高效。它仅依赖3个运行时库，通过一个统一的 runTeam() 函数即可实现从目标设定到结果输出的完整流程。该引擎支持多模型团队协作、自动任务分解和并行执行，旨在降低构建多智能体系统的门槛。项目采用开源方式发布，适合开发者快速集成到现有应用中，实现复杂的多步骤任务自动化。其轻量级特性使其在资源受限或需要快速原型验证的场景下具有优势，是当前多智能体框架领域的一个实用工具。",
+    "tags": [
+      "agent",
+      "tool",
+      "framework",
+      "open-source",
+      "typescript"
+    ],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:35:27Z",
+    "analyzed_at": "2026-04-22T08:35:56Z",
+    "metadata": {
+      "stars": 5810,
+      "language": "TypeScript",
+      "topics": [
+        "agent-framework",
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "deepseek",
+        "gemini",
+        "grok",
+        "llm",
+        "local-llm",
+        "mcp",
+        "model-agnostic",
+        "multi-agent",
+        "nodejs",
+        "ollama",
+        "openai",
+        "orchestration",
+        "structured-output",
+        "task-scheduling",
+        "tool-use",
+        "typescript"
+      ],
+      "created_at": "2026-03-31T19:07:34Z",
+      "updated_at": "2026-04-22T08:15:27Z"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:36:07Z"
+  },
+  {
+    "id": "github-20260422-ollama-ollama",
+    "title": "Ollama 新增支持 Kimi-K2.5、GLM-5 等主流模型",
+    "source_url": "https://github.com/ollama/ollama",
+    "source_type": "github_trending",
+    "summary": "Ollama 是一个流行的本地大模型运行工具，近期更新增加了对 Kimi-K2.5、GLM-5、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma 等多个主流开源模型的支持。用户可通过简单命令快速在本地部署和运行这些模型，无需复杂配置。该更新进一步扩展了 Ollama 的模型生态，降低了开发者使用前沿模型的门槛，尤其适合本地推理、实验和轻量级应用场景。",
+    "tags": [
+      "ollama",
+      "open-source",
+      "model-release",
+      "tool",
+      "llm"
+    ],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:35:28Z",
+    "analyzed_at": "2026-04-22T08:36:00Z",
+    "metadata": {
+      "stars": 169675,
+      "language": "Go",
+      "topics": [
+        "deepseek",
+        "gemma",
+        "gemma3",
+        "glm",
+        "go",
+        "golang",
+        "gpt-oss",
+        "llama",
+        "llama3",
+        "llm",
+        "llms",
+        "minimax",
+        "mistral",
+        "ollama",
+        "qwen"
+      ],
+      "created_at": "2023-06-26T19:39:32Z",
+      "updated_at": "2026-04-22T08:34:34Z"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:36:07Z"
+  },
+  {
+    "id": "github-20260422-affaan-m-everything-claude-code",
+    "title": "Claude Code 等 AI 编码代理的通用性能优化系统",
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_type": "github_trending",
+    "summary": "该项目是一个开源的代理性能优化系统，旨在为 Claude Code、Codex、Opencode、Cursor 等 AI 编码代理提供统一的技能、直觉、记忆、安全与研究优先开发能力。通过集成多种优化模块，它提升了代理在代码生成、上下文理解、安全执行和长期记忆方面的表现，支持跨平台兼容。该工具对于提升 AI 编码代理的实用性和可靠性具有重要价值，尤其适合需要高效、安全编码辅助的开发者和团队。",
+    "tags": [
+      "tool",
+      "agent",
+      "code",
+      "open-source",
+      "llm",
+      "security",
+      "memory"
+    ],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:35:28Z",
+    "analyzed_at": "2026-04-22T08:36:04Z",
+    "metadata": {
+      "stars": 163584,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "productivity"
+      ],
+      "created_at": "2026-01-18T00:51:51Z",
+      "updated_at": "2026-04-22T08:33:34Z"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:36:07Z"
+  },
+  {
+    "id": "github-20260422-alvinreal-awesome-opensource-ai",
+    "title": "开源AI项目精选列表",
+    "source_url": "https://github.com/alvinreal/awesome-opensource-ai",
+    "source_type": "github_trending",
+    "summary": "该项目是一个精心策划的开源AI资源列表，涵盖了最优秀的真正开源AI项目、模型、工具和基础设施。它旨在为开发者、研究人员和AI爱好者提供一个高质量的参考目录，帮助用户快速发现和选择适合自己需求的开源AI解决方案。该列表注重项目的真正开源性质（而非仅开放权重），包括LLM、训练框架、推理引擎、数据集、评估工具等多个类别，是探索开源AI生态的重要入口。",
+    "tags": [
+      "open-source",
+      "tool",
+      "llm",
+      "framework",
+      "dataset",
+      "inference",
+      "training",
+      "evaluation"
+    ],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-22T08:35:28Z",
+    "analyzed_at": "2026-04-22T08:36:07Z",
+    "metadata": {
+      "stars": 2886,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "artificial-intelligence",
+        "awesome",
+        "awesome-list",
+        "generative-ai",
+        "llm",
+        "machine-learning",
+        "mlops",
+        "open-source",
+        "open-source-ai",
+        "rag"
+      ],
+      "created_at": "2026-03-24T15:58:22Z",
+      "updated_at": "2026-04-22T08:33:31Z"
+    },
+    "analysis": {
+      "score": 6
+    },
+    "published_at": "2026-04-22T08:36:07Z"
+  }
+]
