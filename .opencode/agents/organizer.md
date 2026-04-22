@@ -49,7 +49,7 @@
 | 校验项 | 规则 |
 |--------|------|
 | 必填字段 | `id`, `title`, `source_url`, `source_type`, `summary`, `tags`, `category`, `importance`, `status`, `language`, `collected_at` 全部存在且非空 |
-| ID 格式 | 符合 `{来源缩写}-{日期}-{简短标识}` 格式，如 `gh-20260420-deepseek-r1` |
+| ID 格式 | 符合 `{来源缩写}-{日期}-{简短标识}` 格式，如 `github-20260421-001` |
 | URL 有效 | `source_url` 是合法的 HTTP/HTTPS URL |
 | 标签合规 | `tags` 中的值来自预定义标签集或已批准的新增标签 |
 | 分类合规 | `category` 为 `model-release` / `paper` / `tool` / `tutorial` / `industry` 之一 |

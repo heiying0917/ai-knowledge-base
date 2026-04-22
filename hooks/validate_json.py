@@ -46,7 +46,7 @@ VALID_CATEGORIES: set[str] = {"model-release", "paper", "tool", "tutorial", "ind
 VALID_IMPORTANCE: set[str] = {"high", "medium", "low"}
 VALID_STATUSES: set[str] = {"raw", "analyzed", "published"}
 VALID_AUDIENCES: set[str] = {"beginner", "intermediate", "advanced"}
-VALID_SOURCE_TYPES: set[str] = {"github_trending", "hacker_news"}
+VALID_SOURCE_TYPES: set[str] = {"github_trending", "hacker_news", "rss"}
 
 ID_PATTERN: re.Pattern[str] = re.compile(r"^[a-z][a-z0-9]*-\d{8}-\d{3}$")
 URL_PATTERN: re.Pattern[str] = re.compile(r"^https?://.+")

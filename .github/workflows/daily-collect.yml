@@ -1,0 +1,61 @@
+name: Daily AI Knowledge Collection
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run collection pipeline
+        env:
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python pipeline/pipeline.py --sources github,rss --limit 20 --verbose
+
+      - name: Find and validate new articles
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          NEW_FILES=$(find knowledge/articles knowledge/raw -name "*-${TODAY}-*.json" -newer .git/index 2>/dev/null || true)
+          if [ -z "$NEW_FILES" ]; then
+            echo "No new article files to validate"
+            exit 0
+          fi
+          echo "Validating new files:"
+          echo "$NEW_FILES"
+          python hooks/validate_json.py $NEW_FILES
+          python hooks/check_quality.py $NEW_FILES
+
+      - name: Check for new data and commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add knowledge/
+          if git diff --staged --quiet; then
+            echo "No new data to commit"
+            exit 0
+          fi
+          ARTICLE_COUNT=$(git diff --staged --name-only -- 'knowledge/articles/*.json' | while read f; do python3 -c "import json; d=json.load(open('$f')); print(len(d) if isinstance(d,list) else 1)"; done | paste -sd+ | bc)
+          DATE=$(date -u +%Y-%m-%d)
+          git commit -m "feat: collect ${ARTICLE_COUNT} articles on ${DATE}"
+          git push

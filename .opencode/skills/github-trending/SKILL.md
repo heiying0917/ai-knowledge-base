@@ -61,7 +61,7 @@ GET https://api.github.com/search/repositories?q=created:>2026-04-13&sort=stars&
 ### 4. 去重
 
 - 以仓库 `full_name` 作为唯一键
-- 与 `knowledge/raw/` 目录下**最近 7 天**已有的 `github-trending-*.json` 文件进行比对
+- 与 `knowledge/raw/` 目录下**最近 7 天**已有的 `github-*.json` 文件进行比对
 - 使用 Glob 扫描已有文件，Grep 匹配 `name` 字段，排除已采集的仓库
 - 仅保留本次新增的仓库
 
@@ -89,7 +89,7 @@ GET https://api.github.com/search/repositories?q=created:>2026-04-13&sort=stars&
 
 将结果输出为 JSON 数组，交由编排层写入 `knowledge/raw/`。
 
-**编排层写入路径**: `knowledge/raw/github-trending-YYYY-MM-DD-HHMM.json`，日期和时间使用当前 UTC 时间。HHMM 为时分（如 `0830`），用于区分同一天多次执行。
+**编排层写入路径**: `knowledge/raw/github-YYYY-MM-DD-HHMM.json`，日期和时间使用当前 UTC 时间。HHMM 为时分（如 `0830`），用于区分同一天多次执行。
 
 **注意**：本技能不执行文件写入，采集结果交由 orchestrator 透传。
 
