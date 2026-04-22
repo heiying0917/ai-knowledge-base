@@ -1,0 +1,82 @@
+[
+  {
+    "name": "BuilderPulse/BuilderPulse",
+    "url": "https://github.com/BuilderPulse/BuilderPulse",
+    "summary": "BuilderPulse 是面向独立开发者和创业者的 AI 驱动每日情报工具。每天从 10+ 信息源采集数据，生成 20 个关键问题的精要简报。值得关注因为它解决了 indie hackers 信息过载的核心痛点，用 AI 将海量信息蒸馏为可操作的每日洞察。",
+    "stars": 1039,
+    "language": null,
+    "topics": ["ai", "builders", "indiehackers"]
+  },
+  {
+    "name": "WeaveMindAI/weft",
+    "url": "https://github.com/WeaveMindAI/weft",
+    "summary": "Weft 是专为 AI 系统设计的编程语言，使用 Rust 构建。旨在提供一种原生支持 AI 工作流编排、模型管理和推理调度的语言级抽象，区别于在通用语言上叠加 SDK 的方式，从语言层面重新思考 AI 系统的开发范式。",
+    "stars": 921,
+    "language": "rust",
+    "topics": []
+  },
+  {
+    "name": "bergside/design-md-chrome",
+    "url": "https://github.com/bergside/design-md-chrome",
+    "summary": "Chrome 扩展，可从任意网站提取样式并生成 DESIGN.md 文件和面向 AI 的设计技能。基于 TypeUI 框架，支持 Claude、Gemini、Codex 等多种 AI 编码工具，将视觉设计知识转化为 Agent 可消费的结构化文档，打通设计到 AI 代码生成的链路。",
+    "stars": 836,
+    "language": "javascript",
+    "topics": ["ai", "chrome", "chrome-extension", "claude", "claude-design", "codex", "design-md", "design-skills", "extension", "gemini", "open-source", "skills", "skills-ai", "typeui"]
+  },
+  {
+    "name": "techjarves/USB-Uncensored-LLM",
+    "url": "https://github.com/techjarves/USB-Uncensored-LLM",
+    "summary": "零安装的便携本地 AI 环境，可直接从 USB 或 SSD 运行 Gemma、Qwen、NemoMix 等高质量无审查 LLM。完全离线、跨平台（Win/Mac/Linux），支持持久化聊天记录。值得关注因为它提供了一种极简的本地化 LLM 部署方案，适合隐私优先场景。",
+    "stars": 403,
+    "language": "shell",
+    "topics": ["local-llm", "portable-ai", "uncensored-ai"]
+  },
+  {
+    "name": "AIScientists-Dev/WorldSeed",
+    "url": "https://github.com/AIScientists-Dev/WorldSeed",
+    "summary": "AI Agent 自治世界引擎，支持物理规则和信息不对称，任何 Agent 都可接入。通过 YAML 定义场景，观察涌现故事。涵盖多智能体系统、社会模拟、LLM Agents 等方向，是探索 AI Agent 自主行为与涌现交互的开源仿真平台。",
+    "stars": 156,
+    "language": "python",
+    "topics": ["agent-based-simulation", "agentic-ai", "agents", "ai", "ai-agents", "autonomous-agents", "emergent-behavior", "game-ai", "generative-agents", "generative-ai", "llm", "llm-agents", "multi-agent", "multi-agent-systems", "open-source", "python", "simulation", "social-simulation", "typescript", "world-models"]
+  },
+  {
+    "name": "Hainrixz/open-carrusel",
+    "url": "https://github.com/Hainrixz/open-carrusel",
+    "summary": "AI 驱动的 Instagram 轮播图构建工具，通过 Claude 对话式设计幻灯片，导出为 Instagram 精确尺寸的 PNG 图片。基于 Next.js + React 构建，支持本地运行，展示了 AI 在内容创作工作流中的实际落地应用。",
+    "stars": 150,
+    "language": "typescript",
+    "topics": ["ai", "carousel", "claude", "claude-code", "instagram", "local-first", "nextjs", "react"]
+  },
+  {
+    "name": "Blink-h/agent-startup-kit",
+    "url": "https://github.com/Blink-h/agent-startup-kit",
+    "summary": "面向 Claude Code 和 VS Code 的可复用 AI 编码工作流集合，覆盖认证、支付和落地页等常见 SaaS 功能模块的快速搭建。提供开箱即用的模板和技能定义，帮助开发者用 AI Agent 加速产品开发中的重复性编码任务。",
+    "stars": 142,
+    "language": null,
+    "topics": ["ai", "ai-coding", "claude-code", "developer-tools", "productivity", "saas", "skills", "templates", "vscode", "workflow"]
+  },
+  {
+    "name": "vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8",
+    "url": "https://github.com/vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8",
+    "summary": "基于 ESP32-S3 Touch AMOLED 1.8 寸屏的 Claude 桌面伴侣硬件项目。将 AI 助手实体化到嵌入式设备上，使用 C++ 开发固件，展示了 LLM 与 IoT 硬件结合的新方向，为 AI 助手提供了脱离屏幕的物理交互载体。",
+    "stars": 135,
+    "language": "c++",
+    "topics": []
+  },
+  {
+    "name": "Mohd-Mursaleen/openclaw-android",
+    "url": "https://github.com/Mohd-Mursaleen/openclaw-android",
+    "summary": "在 Android 设备上原生运行 OpenClaw Agent 框架，无需 Root、无需 Ubuntu 或 proot。降低了 AI Agent 在移动端的部署门槛，让开发者可以直接在 Android 上体验和开发 Agent 应用，拓展了 Agent 生态到移动平台。",
+    "stars": 134,
+    "language": null,
+    "topics": []
+  },
+  {
+    "name": "simoncirstoiu/alice",
+    "url": "https://github.com/simoncirstoiu/alice",
+    "summary": "AI 驱动的 YOLO 数据集管理工具包，集分析、学习、摄入、策展、导出于一体。支持 NVIDIA CUDA 加速和 Frigate NVR 集成，面向计算机视觉训练数据处理的全流程管理，解决了 YOLO 模型训练中数据准备环节的效率瓶颈。",
+    "stars": 106,
+    "language": "javascript",
+    "topics": ["ai", "ai-tools", "annotation", "computer-vision", "dataset", "frigate", "nvidia-cuda", "nvidia-smi", "nvr", "object-detection", "training", "yolo"]
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "id": "github-20260421-016",
+    "title": "BuilderPulse：indie hackers 每日 AI 情报简报",
+    "source_url": "https://github.com/BuilderPulse/BuilderPulse",
+    "source_type": "github_trending",
+    "summary": "每日从 HN/GitHub/PH 等 300+ 信号源交叉验证，输出一个高确定性 build 方向，中英双语，已连续 7 天命中。",
+    "tags": ["tool", "agent", "code"],
+    "category": "tool",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T11:00:00Z",
+    "analyzed_at": "2026-04-21T12:00:00Z",
+    "metadata": {
+      "stars": 1039,
+      "language": null,
+      "topics": ["ai", "builders", "indiehackers"]
+    },
+    "analysis": {
+      "highlights": [
+        "300+ 公开信号源（HN、GitHub Trending、Product Hunt、HuggingFace、Google Trends、Reddit）交叉验证，每天输出 1 个 build idea + 竞争窗口分析",
+        "中英双语同步输出，7 天历史命中率可追溯（如 Vercel OAuth 漏洞 609 赞、€54K AI 账单事件等）",
+        "纯数据仓库形态（Markdown 每日报告），无代码依赖，RSS 订阅即用"
+      ],
+      "score": 7,
+      "score_reason": "精准解决 indie hackers 信息过载→决策瘫痪的痛点，1k stars + 278 watchers 验证需求真实性。信号交叉验证方法论可复用于其他垂直领域，但本质是内容产品而非底层技术突破"
+    }
+  },
+  {
+    "id": "github-20260421-017",
+    "title": "Weft：面向 AI 系统的编程语言",
+    "source_url": "https://github.com/WeaveMindAI/weft",
+    "source_type": "github_trending",
+    "summary": "Rust 构建的 AI 专用编程语言，LLM/人类/API/基础设施为语言级原语，编译期架构校验，Restate 持久执行。",
+    "tags": ["tool", "agent", "llm", "code"],
+    "category": "tool",
+    "importance": "high",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T11:00:00Z",
+    "analyzed_at": "2026-04-21T12:00:00Z",
+    "metadata": {
+      "stars": 921,
+      "language": "rust",
+      "topics": []
+    },
+    "analysis": {
+      "highlights": [
+        "LLM 推理、人类审批、HTTP 调用、消息通知等均为语言内置节点（非 SDK 叠加），编译器在运行前校验连接类型匹配和架构完整性",
+        "基于 Restate 的持久执行引擎，程序可跨崩溃/重启恢复，人类审批等待数天与数秒使用相同代码",
+        "代码视图与图视图双原生渲染，同一程序可编辑任一视图，另一视图自动同步"
+      ],
+      "score": 9,
+      "score_reason": "从语言层面重新思考 AI 系统开发的范式级创新。将 LLM/人类/基础设施作为 first-class primitives、编译期架构校验、持久执行三位一体，区别于所有现有 Agent 框架的 SDK 叠加方式。921 stars 两个月、123 forks 说明开发者社区的强烈兴趣。项目仍处早期（27 commits），但核心设计文档（DESIGN.md）和技术路线清晰"
+    }
+  },
+  {
+    "id": "github-20260421-018",
+    "title": "design-md-chrome：网站设计系统提取 Chrome 扩展",
+    "source_url": "https://github.com/bergside/design-md-chrome",
+    "source_type": "github_trending",
+    "summary": "Chrome 扩展提取任意网站设计系统，生成 TypeUI 标准 DESIGN.md/SKILL.md，兼容 Claude Code、Codex、Gemini。",
+    "tags": ["tool", "code", "agent"],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T11:00:00Z",
+    "analyzed_at": "2026-04-21T12:00:00Z",
+    "metadata": {
+      "stars": 836,
+      "language": "javascript",
+      "topics": ["ai", "chrome", "chrome-extension", "claude", "claude-design", "codex", "design-md", "design-skills", "extension", "gemini", "open-source", "skills", "skills-ai", "typeui"]
+    },
+    "analysis": {
+      "highlights": [
+        "基于 TypeUI DESIGN.md 开放标准生成结构化设计系统文档，包含品牌、样式基础、可访问性、写作语调、质量门禁等 11 个标准化段落",
+        "支持 DESIGN.md 和 SKILL.md 双模式输出，后者可直接作为 AI Agent 技能定义文件注入 Claude Code / Codex / Gemini",
+        "自动提取排版、颜色、间距、圆角、阴影、动效等视觉 token，已发布 Chrome Web Store"
+      ],
+      "score": 6,
+      "score_reason": "打通设计系统→AI 代码生成的链路有实际价值，836 stars 和 Chrome Web Store 上架说明社区认可。但本质是设计工具链优化，非 AI/LLM 核心技术突破，影响范围限于前端工作流"
+    }
+  },
+  {
+    "id": "github-20260421-019",
+    "title": "USB-Uncensored-LLM：便携式本地 LLM 环境",
+    "source_url": "https://github.com/techjarves/USB-Uncensored-LLM",
+    "source_type": "github_trending",
+    "summary": "零安装 USB/SSD 便携本地 LLM，支持 Gemma/Qwen/NemoMix 等无审查模型，完全离线跨平台。",
+    "tags": ["inference", "llm", "tool"],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T11:00:00Z",
+    "analyzed_at": "2026-04-21T12:00:00Z",
+    "metadata": {
+      "stars": 403,
+      "language": "shell",
+      "topics": ["local-llm", "portable-ai", "uncensored-ai"]
+    },
+    "analysis": {
+      "highlights": [
+        "Shell 脚本实现零依赖部署，即插即用运行于 USB/SSD，支持 Win/Mac/Linux 三平台",
+        "集成 Gemma、Qwen、NemoMix 等开源无审查模型，完全离线运行，支持聊天记录持久化"
+      ],
+      "score": 5,
+      "score_reason": "场景定位明确（隐私优先的本地 LLM），工程实现简洁。但非底层技术创新，本质是开源模型 + Shell 打包，403 stars 显示影响力有限，且'无审查'定位存在合规风险"
+    }
+  },
+  {
+    "id": "github-20260421-020",
+    "title": "WorldSeed：AI Agent 自治世界引擎",
+    "source_url": "https://github.com/AIScientists-Dev/WorldSeed",
+    "source_type": "github_trending",
+    "summary": "YAML 定义场景的 Agent 仿真引擎，支持信息不对称、物理规则、涌现叙事，Agent 可通过 HTTP/WS 接入。",
+    "tags": ["agent", "tool", "multimodal"],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T11:00:00Z",
+    "analyzed_at": "2026-04-21T12:00:00Z",
+    "metadata": {
+      "stars": 156,
+      "language": "python",
+      "topics": ["agent-based-simulation", "agentic-ai", "agents", "ai", "ai-agents", "autonomous-agents", "emergent-behavior", "game-ai", "generative-agents", "generative-ai", "llm", "llm-agents", "multi-agent", "multi-agent-systems", "open-source", "python", "simulation", "social-simulation", "typescript", "world-models"]
+    },
+    "analysis": {
+      "highlights": [
+        "Tick-loop 架构：确定性动作走 DSL 引擎秒级解析，不确定动作走 LLM Dungeon Master 返回结构化效果，信息不对称按角色过滤世界视图",
+        "场景完全由 YAML 声明（实体、规则、物理、感知），引擎零硬编码领域知识，附带 AI Layoffs / 茶馆谍战两个完整示例场景",
+        "支持 OpenClaw 插件、LiteLLM 多模型后端、/create-world AI 生成场景"
+      ],
+      "score": 7,
+      "score_reason": "多 Agent 仿真领域设计精良，DSL + LLM DM 混合架构解决确定性与灵活性矛盾，YAML 声明式场景定义降低了实验门槛。155 stars 偏低但项目仅 6 commits 极早期，DevHunt 已收录。信息不对称和涌现行为研究价值高，对理解 multi-agent 系统有直接参考意义"
+    }
+  },
+  {
+    "id": "github-20260421-021",
+    "title": "open-carrusel：AI 驱动 Instagram 轮播图构建器",
+    "source_url": "https://github.com/Hainrixz/open-carrusel",
+    "source_type": "github_trending",
+    "summary": "Claude 对话式设计 Instagram 轮播图，Next.js 构建，导出精确尺寸 PNG，本地运行。",
+    "tags": ["tool", "agent", "code"],
+    "category": "tool",
+    "importance": "low",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T11:00:00Z",
+    "analyzed_at": "2026-04-21T12:00:00Z",
+    "metadata": {
+      "stars": 150,
+      "language": "typescript",
+      "topics": ["ai", "carousel", "claude", "claude-code", "instagram", "local-first", "nextjs", "react"]
+    },
+    "analysis": {
+      "highlights": [
+        "Claude 对话驱动幻灯片设计，自动适配 Instagram 精确尺寸导出 PNG",
+        "Next.js + React 本地运行，local-first 无需后端服务"
+      ],
+      "score": 4,
+      "score_reason": "垂直场景工具，展示 AI 在内容创作工作流的落地应用，但非技术突破，150 stars 和单一平台定位（Instagram）说明影响力和通用性有限"
+    }
+  },
+  {
+    "id": "github-20260421-022",
+    "title": "agent-startup-kit：Claude Code SaaS 模板集",
+    "source_url": "https://github.com/Blink-h/agent-startup-kit",
+    "source_type": "github_trending",
+    "summary": "Claude Code / VS Code 可复用 AI 编码工作流，覆盖认证、支付、落地页等 SaaS 常规模块。",
+    "tags": ["tool", "code", "agent"],
+    "category": "tool",
+    "importance": "low",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T11:00:00Z",
+    "analyzed_at": "2026-04-21T12:00:00Z",
+    "metadata": {
+      "stars": 142,
+      "language": null,
+      "topics": ["ai", "ai-coding", "claude-code", "developer-tools", "productivity", "saas", "skills", "templates", "vscode", "workflow"]
+    },
+    "analysis": {
+      "highlights": [
+        "覆盖认证、支付、落地页等 SaaS 高频场景的 AI 编码工作流模板",
+        "提供 Skills 定义文件，Claude Code / VS Code 即开即用"
+      ],
+      "score": 4,
+      "score_reason": "模板集合定位明确，降低 SaaS 开发重复劳动。但 142 stars、无代码仓库（language: null）、模板覆盖面有限，技术深度和影响力不足"
+    }
+  },
+  {
+    "id": "github-20260421-023",
+    "title": "claude-desktop-buddy ESP32-S3：Claude 桌面硬件伴侣",
+    "source_url": "https://github.com/vthinkxie/claude-desktop-buddy-esp32-s3-touch-amoled-1.8",
+    "source_type": "github_trending",
+    "summary": "ESP32-S3 AMOLED 屏移植 Claude 桌面伴侣，BLE 连接显示审批/消息，支持 CJK 和自定义 GIF 角色。",
+    "tags": ["tool", "agent", "open-source"],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T11:00:00Z",
+    "analyzed_at": "2026-04-21T12:00:00Z",
+    "metadata": {
+      "stars": 135,
+      "language": "c++",
+      "topics": []
+    },
+    "analysis": {
+      "highlights": [
+        "基于 Anthropic 官方 claude-desktop-buddy 的社区移植，使用 Nordic UART Service BLE 协议与 Claude macOS/Windows 配对，显示审批提示、消息流、token 统计",
+        "184×224 逻辑画布 2x 上采样至 368×448 AMOLED，~25fps 渲染，PSRAM Canvas ~80KB，7 种状态动画（sleep/idle/busy/attention/celebrate/dizzy/heart）",
+        "支持 18 种 ASCII 物种 + 自定义 GIF 角色包（manifest.json + 96px GIF），CJK 字体支持中文日志渲染"
+      ],
+      "score": 6,
+      "score_reason": "LLM 与嵌入式硬件结合的有意义探索，技术实现完整（BLE 协议、HAL 抽象、PlatformIO 工具链），展示了 AI 助手脱离屏幕的物理交互新形态。135 stars 有限但项目定位小众。为 Claude 生态的硬件延伸提供了可参考的工程范例"
+    }
+  },
+  {
+    "id": "github-20260421-024",
+    "title": "OpenClaw Android：原生运行 Agent 框架",
+    "source_url": "https://github.com/Mohd-Mursaleen/openclaw-android",
+    "source_type": "github_trending",
+    "summary": "Termux 原生运行 OpenClaw 无需 proot/Ubuntu，2 秒启动，支持 ADB 自动化和本地 LLM。",
+    "tags": ["agent", "tool", "inference"],
+    "category": "tool",
+    "importance": "medium",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T11:00:00Z",
+    "analyzed_at": "2026-04-21T12:00:00Z",
+    "metadata": {
+      "stars": 134,
+      "language": null,
+      "topics": []
+    },
+    "analysis": {
+      "highlights": [
+        "仅需一个 Node.js 小补丁修复 Android Bionic libc 兼容性，即可在 Termux 原生环境运行 OpenClaw，启动 ~2 秒 vs proot 方案 10-30 秒",
+        "配套 ADB Bridge 实现 Android 自动化（App 操作、电影订票），以及 LiteRT-LM 本地运行 Gemma 4 做离线 LLM 后端"
+      ],
+      "score": 5,
+      "score_reason": "解决了 Agent 框架在移动端部署的实际工程问题，proot 方案的轻量替代有实用价值。但本质是部署指南 + 小补丁，非核心技术突破，134 stars 说明社区关注度有限。旧手机复用的思路有趣但场景偏小众"
+    }
+  },
+  {
+    "id": "github-20260421-025",
+    "title": "Alice：YOLO 数据集管理工具包",
+    "source_url": "https://github.com/simoncirstoiu/alice",
+    "source_type": "github_trending",
+    "summary": "AI 驱动的 YOLO 数据集全流程管理，集分析/标注/导出于一体，CUDA 加速，Frigate NVR 集成。",
+    "tags": ["tool", "training", "dataset"],
+    "category": "tool",
+    "importance": "low",
+    "status": "analyzed",
+    "language": "zh-CN",
+    "collected_at": "2026-04-21T11:00:00Z",
+    "analyzed_at": "2026-04-21T12:00:00Z",
+    "metadata": {
+      "stars": 106,
+      "language": "javascript",
+      "topics": ["ai", "ai-tools", "annotation", "computer-vision", "dataset", "frigate", "nvidia-cuda", "nvidia-smi", "nvr", "object-detection", "training", "yolo"]
+    },
+    "analysis": {
+      "highlights": [
+        "覆盖 YOLO 训练数据全流程：分析→学习→摄入→策展→导出，CUDA 加速处理",
+        "集成 Frigate NVR 系统，支持从实时监控视频流直接构建训练数据集"
+      ],
+      "score": 4,
+      "score_reason": "垂直于 YOLO 数据准备环节的工具，解决特定痛点，但 106 stars 显示影响力有限，与 AI/LLM/Agent 核心技术关联度较低，属于计算机视觉工具链的常规水平"
+    }
+  }
+]

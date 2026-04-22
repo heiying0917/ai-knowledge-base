@@ -115,9 +115,6 @@ allowed-tools:
       "stars": 15000,
       "language": "python"
     },
-    "collected_by": "collector",
-    "raw_written_by": "orchestrator",
-    "analyzed_by": "analyzer",
     "analysis": {
       "highlights": [
         "采用 GRPO 强化学习算法，无需 SFT 即可实现推理能力提升",
