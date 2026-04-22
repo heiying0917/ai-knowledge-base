@@ -1,0 +1,95 @@
+# AI 知识库 RSS 数据源配置
+#
+# 每个 RSS 源包含以下字段:
+#   name:     显示名称（也用作采集时的 source 标识）
+#   url:      RSS 订阅地址
+#   category: 内容分类，用于 downstream 标签和过滤
+#             可选: tech-news / ai-research / company-blog / zh-community
+#                   research / open-source / industry / news
+#   enabled:  是否参与采集，false 时跳过
+#
+# 量太大的源默认 disabled，避免 LLM 分析成本过高。
+# 启用前建议先用 curl 验证 RSS 可达性。
+
+sources:
+  # ── 综合技术 ──────────────────────────────────────────────
+
+  - name: hackernews-ai
+    url: https://hnrss.org/best?q=AI+LLM+agent&count=30
+    category: tech-news
+    enabled: true
+
+  - name: lobsters-aiml
+    url: https://lobste.rs/t/ai,ml.rss
+    category: tech-news
+    enabled: false  # 偶发 500，稳定性待观察
+
+  # ── AI 研究 ──────────────────────────────────────────────
+
+  - name: arxiv-cs-ai
+    url: https://export.arxiv.org/rss/cs.AI
+    category: ai-research
+    enabled: false  # 日均 50+ 篇，量太大，按需开启
+
+  - name: arxiv-cs-cl
+    url: https://export.arxiv.org/rss/cs.CL
+    category: ai-research
+    enabled: false  # Computation and Language，日更量大
+
+  - name: arxiv-cs-lg
+    url: https://export.arxiv.org/rss/cs.LG
+    category: ai-research
+    enabled: false  # Machine Learning，日更量极大
+
+  # ── 公司博客 ──────────────────────────────────────────────
+
+  - name: openai-blog
+    url: https://openai.com/blog/rss.xml
+    category: company-blog
+    enabled: false  # DNS 解析不稳定，需代理访问
+
+  - name: anthropic-research
+    url: https://www.anthropic.com/feed.xml
+    category: company-blog
+    enabled: false  # 返回 404，RSS 地址可能已变更
+
+  - name: huggingface-blog
+    url: https://huggingface.co/blog/feed.xml
+    category: company-blog
+    enabled: false  # 响应超时，国内访问不稳定
+
+  # ── 中文社区 ──────────────────────────────────────────────
+
+  - name: jiqizhixin
+    url: https://www.jiqizhixin.com/rss
+    category: zh-community
+    enabled: false  # 需确认 RSS 可达性和反爬策略
+
+  - name: qbitai
+    url: https://www.qbitai.com/rss
+    category: zh-community
+    enabled: false  # 需确认 RSS 可达性和反爬策略
+
+  # ── 研究社区 ──────────────────────────────────────────────
+
+  - name: reddit-machinelearning
+    url: https://www.reddit.com/r/MachineLearning/hot.rss
+    category: research
+    enabled: true
+
+  - name: reddit-localllama
+    url: https://www.reddit.com/r/LocalLLaMA/hot.rss
+    category: open-source
+    enabled: true
+
+  # ── 行业媒体 ──────────────────────────────────────────────
+
+  - name: google-ai-blog
+    url: https://blog.google/technology/ai/rss/
+    category: industry
+    enabled: false  # 国内连接被重置，需代理访问
+
+  - name: theverge-ai
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    category: news
+    enabled: false  # 国内连接被重置，需代理访问
